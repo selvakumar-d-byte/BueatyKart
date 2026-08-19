@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautyKart - Beauty & Cosmetics</title>
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Handlee&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="offer" id="offer">
+        <h4>Free Shipping on Orders Above ₹499</h4>
+        <i class="fa-solid fa-xmark offer-close" id="offer_close"></i>
+    </section>
+
+    <header class="header">
+        <div class="menu" id="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="menu-content" id="menu-content">
+            <i class="fa-solid fa-xmark offer-close" id="menu_close"></i>
+            <a href="index.html" class="active">
+                <p>Home</p>
+            </a>
+            <a href="./products/makeup.html">
+                <p>MakeUp</p>
+            </a>
+            <a href="./products/skincare.html">
+                <p>SkinCare</p>
+            </a>
+            <a href="./products/haircare.html">
+                <p>HairCare</p>
+            </a>
+
+            <a href="wishlist.html">
+                <p>Wishlist <i class="fa-regular fa-heart"></i></p>
+            </a>
+            <a href="cart.html">
+                <p>Cart <i class="fa-solid fa-bag-shopping"></i></p>
+            </a>
+        </div>
+
+        <div class="logo">
+            <h1>BEAUTYKART</h1>
+        </div>
+
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Search for products, brands...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="header-icons">
+            <a href=""><i class="fa-regular fa-circle-user"></i></a>
+            <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+    </header>
+
+    <section class="nav">
+        <a href="index.html" class="active">
+            <p>Home</p>
+        </a>
+        <a href="./products/makeup.html">
+            <p>MakeUp</p>
+        </a>
+        <a href="./products/skincare.html">
+            <p>SkinCare</p>
+        </a>
+        <a href="./products/haircare.html">
+            <p>Hair Care</p>
+        </a>
+        <p class="offer-button" id="offer-button">Offer</p>
+    </section>
+
+    <div class="offer-overlay" id="offer-overlay">
+
+        <div class="offer-banner">
+
+            <i class="fa-solid fa-xmark" id="offer-close"></i>
+
+            <h2>Special Offer 🎉</h2>
+            <p>Get up to <strong>50% OFF</strong></p>
+            <p>On selected beauty products</p>
+
+            <button>SHOP NOW</button>
+
+        </div>
+
+    </div>
+
+    <section class="hero-section">
+        <img src="./images/hero-image.png" alt="">
+
+        <div class="hero-content">
+            <h2>Beauty <br> that empowers </h2>
+            <h1>You</h1>
+            <p>Explore best of beauty & personal care products</p>
+            <button>SHOP NOW</button>
+        </div>
+    </section>
+
+    <section class="highlights">
+        <div>
+            <i class="fa-regular fa-circle-check"></i>
+            <p>100% Original <br> Products</p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-repeat"></i>
+            <p>Easy Return <br> & Refund</p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-truck-fast"></i>
+            <p>Free Delivery <br> above ₹499</p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <p>Secure <br> Payments</p>
+        </div>
+    </section>
+
+    <section class="category">
+        <h3>Shop by Category</h3>
+
+        <div class="category-products">
+            <div>
+                <img src="./images/category-images/makeup.png" alt="">
+                <p>MakeUp</p>
+            </div>
+
+            <div>
+                <img src="./images/category-images/skincare.png" alt="">
+                <p>Skincare</p>
+            </div>
+
+            <div>
+                <img src="./images/category-images/haircare.png" alt="">
+                <p>Haircare</p>
+            </div>
+
+            <div>
+                <img src="./images/category-images/fragrance.png" alt="">
+                <p>Fragrance</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-selling">
+
+        <div class="best-selling-topic">
+            <h2>Best Selling</h2>
+            <a href="./products/makeup.html">view all --></a>
+        </div>
+
+
+        <div class="product-container" id="product-container">
+
+            <div class="product-card">
+                <img src="./images/best-selling/best-selling-1.png" alt="">
+                <h4>Maybelline Creamy Matte Lipstick</h4>
+                <p>₹499</p>
+                <p>⭐ 4.7</p>
+            </div>
+
+            <div class="product-card">
+                <img src="./images/best-selling/best-selling-2.png" alt="">
+                <h4>Lakme 9to5 Primer + Matte Foundation</h4>
+                <p>₹699</p>
+                <p>⭐ 4.4</p>
+            </div>
+
+            <div class="product-card">
+                <img src="./images/best-selling/best-selling-3.png" alt="">
+                <h4>Swiss Beauty Liquid Eyeliner</h4>
+                <p>₹599</p>
+                <p>⭐ 4.4</p>
+            </div>
+
+            <div class="product-card">
+                <img src="./images/best-selling/best-selling-4.png" alt="">
+                <h4>Dot & Key Watermelon Moisturizer</h4>
+                <p>₹399</p>
+                <p>⭐ 4.5</p>
+            </div>
+
+            <div class="product-card">
+                <img src="./images/best-selling/best-selling-5.png" alt="">
+                <h4>Lakme Milk Moisturiser</h4>
+                <p>₹899</p>
+                <p>⭐ 4.4</p>
+            </div>
+
+            <div class="product-card">
+                <img src="./images/best-selling/best-selling-6.png" alt="">
+                <h4>Lakme 9to5 Vit C+ Facial Serum</h4>
+                <p>₹899</p>
+                <p>⭐ 4.4</p>
+            </div>
+
+            <div class="product-card">
+                <img src="./images/best-selling/best-selling-7.png" alt="">
+                <h4>Maybelline Lash Sensational Mascara</h4>
+                <p>₹899</p>
+                <p>⭐ 4.6</p>
+            </div>
+
+            <div class="product-card">
+                <img src="./images/best-selling/best-selling-8.png" alt="">
+                <h4>Biotique Sun Shield Sunscreen</h4>
+                <p>₹899</p>
+                <p>⭐ 4.1</p>
+            </div>
+
+            <div class="product-card">
+                <img src="./images/best-selling/best-selling-9.png" alt="">
+                <h4>Bella Vita Rose Woman Eau De Parfum</h4>
+                <p>₹899</p>
+                <p>⭐ 4.5</p>
+            </div>
+
+            <div class="product-card">
+                <img src="./images/best-selling/best-selling-10.png" alt="">
+                <h4>Himalaya Purifying Neem Face Wash</h4>
+                <p>₹899</p>
+                <p>⭐ 4.8</p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="best-offer">
+        <img src="./images/best-offer/best-offer-1.png" alt="">
+        <img src="./images/best-offer/best-offer-2.png" alt="">
+        <img src="./images/best-offer/best-offer-3.png" alt="">
+        <img src="./images/best-offer/best-offer-4.png" alt="">
+    </section>
+
+    <section class="brands">
+        <h2>Top Brands</h2>
+        <div>
+            <img src="./images/brands/brand-1.png" alt="">
+            <img src="./images/brands/brand-2.png" alt="">
+            <img src="./images/brands/brand-3.png" alt="">
+            <img src="./images/brands/brand-4.png" alt="">
+            <img src="./images/brands/brand-5.png" alt="">
+            <img src="./images/brands/brand-6.png" alt="">
+            <img src="./images/brands/brand-7.png" alt="">
+            <img src="./images/brands/brand-8.png" alt="">
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+                <h2>BEAUTYKART</h2>
+                <p>Your Beauty. Our Passion.</p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+
+            <!-- Customer Care -->
+            <div class="footer-links">
+                <h3>CUSTOMER CARE</h3>
+
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+                <a href="#">Shipping & Delivery</a>
+                <a href="#">Returns & Refunds</a>
+                <a href="#">Track Your Order</a>
+            </div>
+
+
+            <!-- About Us -->
+            <div class="footer-links">
+                <h3>ABOUT US</h3>
+
+                <a href="#">About BeautyKart</a>
+                <a href="#">Careers</a>
+                <a href="#">Store Locator</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+
+            <!-- Useful Links -->
+            <div class="footer-links">
+                <h3>USEFUL LINKS</h3>
+
+                <a href="#">Offers</a>
+                <a href="#">Blog</a>
+                <a href="#">Beauty Tips</a>
+                <a href="#">Sitemap</a>
+            </div>
+
+
+            <!-- Popular Categories -->
+            <div class="footer-links">
+                <h3>POPULAR CATEGORIES</h3>
+
+                <a href="#">Makeup</a>
+                <a href="#">Skincare</a>
+                <a href="#">Haircare</a>
+                <a href="#">Fragrance</a>
+                <a href="#">Personal Care</a>
+            </div>
+
+
+            <!-- Newsletter & App -->
+            <div class="footer-right">
+
+                <div class="newsletter">
+                    <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+
+                    <p>Get updates on new arrivals, offers & more.</p>
+
+                    <div class="subscribe-box">
+                        <input type="email" placeholder="Enter your email">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+
+
+                <div class="download-app">
+                    <h3>DOWNLOAD OUR APP</h3>
+
+                    <div class="app-buttons">
+                        <a href="#">
+                            <i class="fa-brands fa-google-play"></i>
+                            <span>GET IT ON<br><b>Google Play</b></span>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>Download on the<br><b>App Store</b></span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>© 2024 BeautyKart. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
