@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./skincare.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
@@ -60,11 +60,14 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
 
-        <div class="header-icons">
-            <a href=""><i class="fa-regular fa-circle-user"></i></a>
-            <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
-            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
-        </div>
+       <div class="header-icons">
+    <a href=""><i class="fa-regular fa-circle-user"></i></a>
+    <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+    <a href="cart.html" id="cartButton">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span id="cartCount">0</span>
+    </a>
+</div>
     </header>
 
     <section class="nav">
@@ -99,6 +102,936 @@
 
     </div>
 
-    <script src="../script.js"></script>
+     <!-- ================= PAGE BANNER ================= -->
+
+    <section class="page-banner">
+
+        <div class="banner-content">
+
+            <p>SKINCARE COLLECTION</p>
+
+            <h1>Glow Begins With You</h1>
+
+            <span>
+                Discover skincare essentials curated for
+                healthy, glowing and beautiful skin.
+            </span>
+
+        </div>
+
+    </section>
+
+     <!-- ================= BREADCRUMB ================= -->
+
+    <div class="breadcrumb">
+
+        <a href="index.html">Home</a>
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+        <span>Skincare</span>
+
+    </div>
+
+  <!-- ================= MAIN SECTION ================= -->
+
+    <main class="shop-container">
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="filter-sidebar">
+
+            <div class="filter-heading">
+
+                <h2>Filters</h2>
+
+                <button id="clearFilters">
+                    CLEAR ALL
+                </button>
+
+            </div>
+
+            
+            <!-- Category -->
+
+            <div class="filter-group">
+
+                <h3>Category</h3>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        class="category-filter"
+                        value="cleanser"
+                    >
+                    Cleansers
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        class="category-filter"
+                        value="serum"
+                    >
+                    Serums
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        class="category-filter"
+                        value="moisturizer"
+                    >
+                    Moisturizers
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        class="category-filter"
+                        value="sunscreen"
+                    >
+                    Sunscreen
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        class="category-filter"
+                        value="facewash"
+                    >
+                    Face Wash
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        class="category-filter"
+                        value="toner"
+                    >
+                    Toners
+                </label>
+
+            </div>
+
+
+            <!-- Price -->
+
+            <div class="filter-group">
+
+                <h3>Price</h3>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="price"
+                        class="price-filter"
+                        value="all"
+                        checked
+                    >
+                    All Prices
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="price"
+                        class="price-filter"
+                        value="500"
+                    >
+                    Under ₹500
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="price"
+                        class="price-filter"
+                        value="1000"
+                    >
+                    ₹500 - ₹1000
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="price"
+                        class="price-filter"
+                        value="1500"
+                    >
+                    ₹1000 - ₹1500
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="price"
+                        class="price-filter"
+                        value="2000"
+                    >
+                    Above ₹1500
+                </label>
+
+            </div>
+
+
+            <!-- Rating -->
+
+            <div class="filter-group">
+
+                <h3>Rating</h3>
+
+                <label>
+                    <input type="checkbox">
+                    ★★★★★ 4 & above
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    ★★★★☆ 3 & above
+                </label>
+
+            </div>
+
+        </aside>
+
+         <!-- ================= PRODUCTS ================= -->
+
+        <section class="products-section">
+
+
+            <!-- Heading -->
+
+            <div class="products-header">
+
+                <div>
+
+                    <p>BEAUTY ESSENTIALS</p>
+
+                    <h2>Skincare Products</h2>
+
+                    <span id="productCount">
+                        8 Products
+                    </span>
+
+                </div>
+
+
+                <!-- Sort -->
+
+                <div class="sort-box">
+
+                    <label for="sortSelect">
+                        Sort By:
+                    </label>
+
+                    <select id="sortSelect">
+
+                        <option value="default">
+                            Recommended
+                        </option>
+
+                        <option value="low">
+                            Price: Low to High
+                        </option>
+
+                        <option value="high">
+                            Price: High to Low
+                        </option>
+
+                        <option value="rating">
+                            Customer Rating
+                        </option>
+
+                        <option value="discount">
+                            Highest Discount
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product Grid -->
+
+            <div
+                class="product-grid"
+                id="productGrid"
+            >
+
+
+                <!-- PRODUCT 1 -->
+
+                <div
+                    class="product-card"
+                    data-category="cleanser"
+                    data-price="449"
+                    data-rating="4.0"
+                    data-discount="20"
+                >
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            20% OFF
+                        </span>
+
+                        <button class="wishlist-btn">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1750085036829-ae889357991f?q=80&w=1944&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Cleanser"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            CETAPHIL
+                        </p>
+
+                        <h3>
+                            Cleanser
+                        </h3>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐
+                            <span>(248)</span>
+                        </div>
+
+                        <div class="price">
+
+                            <strong>₹449</strong>
+
+                            <del>₹560</del>
+
+                            <span>20% OFF</span>
+
+                        </div>
+
+                        <button
+                            class="add-cart"
+                            data-name="Cleanser"
+                        >
+                            ADD TO BAG
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+
+                <div
+                    class="product-card"
+                    data-category="serum"
+                    data-price="899"
+                    data-rating="4.0"
+                    data-discount="25"
+                >
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            25% OFF
+                        </span>
+
+                        <button class="wishlist-btn">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                        <img
+                            src="https://images-static.nykaa.com/media/catalog/product/2/f/2f64156769915195668_1.jpg"
+                            alt="Vitamin C Serum"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            THE ORDINARY
+                        </p>
+
+                        <h3>
+                            Vitamin C Face Serum
+                        </h3>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐
+                            <span>(421)</span>
+                        </div>
+
+                        <div class="price">
+
+                            <strong>₹899</strong>
+
+                            <del>₹1,199</del>
+
+                            <span>25% OFF</span>
+
+                        </div>
+
+                        <button
+                            class="add-cart"
+                            data-name="Vitamin C Face Serum"
+                        >
+                            ADD TO BAG
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 3 -->
+
+                <div
+                    class="product-card"
+                    data-category="moisturizer"
+                    data-price="699"
+                    data-rating="5.0"
+                    data-discount="18"
+                >
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            18% OFF
+                        </span>
+
+                        <button class="wishlist-btn">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                        <img
+                            src="https://m.media-amazon.com/images/I/61S3Oum8BmL.jpg"
+                            alt="Face Moisturizer"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            DOT & KEY
+                        </p>
+
+                        <h3>
+                            Brightening Face Moisturizer
+                        </h3>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>(186)</span>
+                        </div>
+
+                        <div class="price">
+
+                            <strong>₹699</strong>
+
+                            <del>₹849</del>
+
+                            <span>18% OFF</span>
+
+                        </div>
+
+                        <button
+                            class="add-cart"
+                            data-name="Btrightening Face Moisturizer"
+                        >
+                            ADD TO BAG
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 4 -->
+
+                <div
+                    class="product-card"
+                    data-category="sunscreen"
+                    data-price="599"
+                    data-rating="5.0"
+                    data-discount="20"
+                >
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            20% OFF
+                        </span>
+
+                        <button class="wishlist-btn">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbHq42ZfHLVwO4cjnMKnkAOmkupVQGV2tgDSlYci06mA&s=10"
+                            alt="Sunscreen"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            The derma co
+                        </p>
+
+                        <h3>
+                            SPF 50 Sunscreen
+                        </h3>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>(312)</span>
+                        </div>
+
+                        <div class="price">
+
+                            <strong>₹599</strong>
+
+                            <del>₹749</del>
+
+                            <span>20% OFF</span>
+
+                        </div>
+
+                        <button
+                            class="add-cart"
+                            data-name="SPF 50 Sunscreen"
+                        >
+                            ADD TO BAG
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 5 -->
+
+                <div
+                    class="product-card"
+                    data-category="facewash"
+                    data-price="349"
+                    data-rating="5.0"
+                    data-discount="15"
+                >
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            15% OFF
+                        </span>
+
+                        <button class="wishlist-btn">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTartZ3Y8Vd0hlnqVsWTyPRwMBFFwOyW1xJlLGRH379Sw&s=10"
+                            alt="Face Wash"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            SIMPLE
+                        </p>
+
+                        <h3>
+                            Refreshing Face Wash
+                        </h3>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>(143)</span>
+                        </div>
+
+                        <div class="price">
+
+                            <strong>₹349</strong>
+
+                            <del>₹410</del>
+
+                            <span>15% OFF</span>
+
+                        </div>
+
+                        <button
+                            class="add-cart"
+                            data-name="Refreshing Face Wash"
+                        >
+                            ADD TO BAG
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 6 -->
+
+                <div
+                    class="product-card"
+                    data-category="toner"
+                    data-price="799"
+                    data-rating="3.0"
+                    data-discount="20"
+                >
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            20% OFF
+                        </span>
+
+                        <button class="wishlist-btn">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                        <img
+                            src="https://main.thgimages.com/?url=https://static.thcdn.com/productimg/original/13319821-5154896470762406.jpg&format=webp&width=1500&height=1500&fit=cover"
+                            alt="Face Toner"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            LANEIGE
+                        </p>
+
+                        <h3>
+                            Hydrating Face Toner
+                        </h3>
+
+                        <div class="rating">
+                            ⭐⭐⭐
+                            <span>(205)</span>
+                        </div>
+
+                        <div class="price">
+
+                            <strong>₹799</strong>
+
+                            <del>₹999</del>
+
+                            <span>20% OFF</span>
+
+                        </div>
+
+                        <button
+                            class="add-cart"
+                            data-name="Hydrating Face Toner"
+                        >
+                            ADD TO BAG
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 7 -->
+
+                <div
+                    class="product-card"
+                    data-category="serum"
+                    data-price="1299"
+                    data-rating="4.0"
+                    data-discount="30"
+                >
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            30% OFF
+                        </span>
+
+                        <button class="wishlist-btn">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                        <img
+                            src="https://www.clinikally.com/cdn/shop/files/Minimalist5_NiacinamideFaceSerum30ml1.jpg?v=1733832629&width=2667"
+                            alt="Niacinamide Serum"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            MINIMALIST
+                        </p>
+
+                        <h3>
+                            Niacinamide Serum
+                        </h3>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐
+                            <span>(389)</span>
+                        </div>
+
+                        <div class="price">
+
+                            <strong>₹1,299</strong>
+
+                            <del>₹1,849</del>
+
+                            <span>30% OFF</span>
+
+                        </div>
+
+                        <button
+                            class="add-cart"
+                            data-name="Hyaluronic Acid Serum"
+                        >
+                            ADD TO BAG
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 8 -->
+
+                <div
+                    class="product-card"
+                    data-category="moisturizer"
+                    data-price="1599"
+                    data-rating="4.0"
+                    data-discount="50"
+                >
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            50% OFF
+                        </span>
+
+                        <button class="wishlist-btn">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                        <img
+                            src="https://www.caretobeauty.com/cdn-cgi/image/f=auto/media/catalog/product//c/l/clinique-dramatically-different-moisturizing-gel-125ml.jpg"
+                            alt="Luxury Moisturizer"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            CLINIQUE
+                        </p>
+
+                        <h3>
+                            72H Hydrating Moisturizer
+                        </h3>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐
+                            <span>(278)</span>
+                        </div>
+
+                        <div class="price">
+
+                            <strong>₹1,599</strong>
+
+                            <del>₹2,099</del>
+
+                            <span>50% OFF</span>
+
+                        </div>
+
+                        <button
+                            class="add-cart"
+                            data-name="72H Hydrating Moisturizer"
+                        >
+                            ADD TO BAG
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- No Products -->
+
+            <div
+                id="noProducts"
+                class="no-products"
+            >
+
+                <i class="fa-regular fa-face-frown"></i>
+
+                <h3>No products found</h3>
+
+                <p>
+                    Try changing your filters or search.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+     <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+                <h2>BEAUTYKART</h2>
+                <p>Your Beauty. Our Passion.</p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+
+            <!-- Customer Care -->
+            <div class="footer-links">
+                <h3>CUSTOMER CARE</h3>
+
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+                <a href="#">Shipping & Delivery</a>
+                <a href="#">Returns & Refunds</a>
+                <a href="#">Track Your Order</a>
+            </div>
+
+
+            <!-- About Us -->
+            <div class="footer-links">
+                <h3>ABOUT US</h3>
+
+                <a href="#">About BeautyKart</a>
+                <a href="#">Careers</a>
+                <a href="#">Store Locator</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+
+            <!-- Useful Links -->
+            <div class="footer-links">
+                <h3>USEFUL LINKS</h3>
+
+                <a href="#">Offers</a>
+                <a href="#">Blog</a>
+                <a href="#">Beauty Tips</a>
+                <a href="#">Sitemap</a>
+            </div>
+
+
+            <!-- Popular Categories -->
+            <div class="footer-links">
+                <h3>POPULAR CATEGORIES</h3>
+
+                <a href="#">Makeup</a>
+                <a href="#">Skincare</a>
+                <a href="#">Haircare</a>
+                <a href="#">Fragrance</a>
+                <a href="#">Personal Care</a>
+            </div>
+
+
+            <!-- Newsletter & App -->
+            <div class="footer-right">
+
+                <div class="newsletter">
+                    <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+
+                    <p>Get updates on new arrivals, offers & more.</p>
+
+                    <div class="subscribe-box">
+                        <input type="email" placeholder="Enter your email">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+
+
+                <div class="download-app">
+                    <h3>DOWNLOAD OUR APP</h3>
+
+                    <div class="app-buttons">
+                        <a href="#">
+                            <i class="fa-brands fa-google-play"></i>
+                            <span>GET IT ON<br><b>Google Play</b></span>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>Download on the<br><b>App Store</b></span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>© 2024 BeautyKart. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="./skincare.js"></script>
+    
 </body>
 </html>
