@@ -526,7 +526,7 @@ document.querySelectorAll(".product-card").forEach(card => {
         const id = this.dataset.id;
 
         window.location.href =
-            `product-details.html?id=${id}`;
+            `./product-details.html?id=${id}`;
 
     });
 
