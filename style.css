@@ -598,15 +598,6 @@
     font-size: 14px;
 }
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1200px) {
 
     .footer-container {
@@ -801,4 +792,698 @@
     .best-offer {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+.hair-benefits{
+    display:flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 35px  5%;
+    background-color:#fff;
+}
+.hair-benefit{
+    flex:1;
+    display: flex;
+    align-items:center;
+    gap:18px;
+    padding: 22px 25px;
+    background-color: #f3f1f1;
+     border-radius: 20px;
+}
+
+.hair-benefit i {
+    font-size: 32px;
+}
+.hair-benefit h3 {
+    margin: 0 0 6px;
+    font-size: 20px;
+}
+.hair-benefit p {
+    margin: 0;
+    font-size: 14px;
+}
+.hair-intro{
+    padding:55px 8%;
+    text-align:center;
+    background-color:#fff;
+}
+.hair-intro-content{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.hair-intro h1{
+
+    margin: 0 0 18px;
+    font-size: 38px;
+    font-weight: 700;
+}
+.hair-intro p{
+    margin: 0 auto;
+     max-width: 750px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.hair-categories {
+    padding: 50px 5% 70px;
+    background-color: #fafafa;
+}
+.section-heading{
+    text-align:center;
+    margin-bottom: 35px;
+}
+.section-heading h2 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+.section-heading p {
+    margin: 0;
+    font-size: 17px;
+}
+.hair-category-container{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+}
+.hair-category-card{
+    background-color:white;
+    padding:30px 20px;
+    min-height:180px;
+    border-radius:15px;
+   text-align:center;
+     border: 1px solid #eeeeee;
+    transition: 0.3s ease;
+}
+.hair-category-card i {
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.hair-category-card h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.hair-category-card p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 15px;
+}
+.hair-category-card:hover {
+    transform: translateY(-5px);
+}
+
+.hair-products {
+padding: 80px 5%;
+background-color: #ffffff;
+}
+
+.hair-products-heading {
+text-align: center;
+margin-bottom: 45px;
+}
+
+.hair-products-heading h2 {
+font-size: 38px;
+margin-bottom: 12px;
+font-weight: 700;
+}
+
+.hair-products-heading p {
+font-size: 18px;
+color: #555;
+}
+
+.hair-product-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 30px;
+}
+
+
+.hair-product-card {
+border: 1px solid #e5e5e5;
+border-radius: 15px;
+padding: 20px;
+background-color: #fff;
+transition: 0.3s ease;
+}
+
+.hair-product-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+.hair-product-image {
+width: 100%;
+height: 280px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #fafafa;
+border-radius: 12px;
+margin-bottom: 20px;
+}
+
+.hair-product-image img {
+width: 80%;
+height: 90%;
+object-fit: contain;
+}
+
+
+.hair-product-card h3 {
+font-size: 20px;
+margin-bottom: 8px;
+}
+
+.hair-product-brand {
+color: #777;
+margin-bottom: 8px;
+}
+
+.hair-product-price {
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 15px;
+}
+
+.hair-add-cart {
+width: 100%;
+padding: 12px;
+border: none;
+border-radius: 8px;
+background-color: #ec0877;
+color: white;
+font-size: 16px;
+font-weight: 600;
+cursor: pointer;
+transition: 0.3s ease;
+}
+
+.hair-add-cart:hover {
+background-color: #c90062;
+}
+
+
+@media (max-width: 1000px) {
+
+.hair-product-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+@media (max-width: 600px) {
+
+.hair-products {
+    padding: 50px 20px;
+}
+
+.hair-products-heading h2 {
+    font-size: 30px;
+}
+
+.hair-product-grid {
+    grid-template-columns: 1fr;
+}
+}
+
+
+.hair-concerns {
+padding: 80px 5%;
+background-color: #fafafa;
+}
+
+.hair-concerns-heading {
+text-align: center;
+margin-bottom: 45px;
+}
+
+.hair-concerns-heading h2 {
+font-size: 38px;
+margin-bottom: 12px;
+}
+
+.hair-concerns-heading p {
+font-size: 18px;
+color: #666;
+}
+
+
+.hair-concern-grid {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 25px;
+}
+
+
+.hair-concern-card {
+background-color: white;
+border: 1px solid #e5e5e5;
+border-radius: 15px;
+padding: 35px 20px;
+text-align: center;
+transition: 0.3s ease;
+}
+
+.hair-concern-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.hair-concern-card i {
+font-size: 42px;
+margin-bottom: 20px;
+}
+
+.hair-concern-card h3 {
+font-size: 21px;
+margin-bottom: 12px;
+}
+
+.hair-concern-card p {
+font-size: 15px;
+line-height: 1.6;
+color: #666;
+margin-bottom: 20px;
+}
+
+
+.hair-concern-card a {
+color: #ec0877;
+font-weight: 600;
+text-decoration: none;
+}
+
+.hair-concern-card a:hover {
+text-decoration: underline;
+}
+
+
+
+@media (max-width: 1100px) {
+
+.hair-concern-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+}
+
+@media (max-width: 700px) {
+
+.hair-concern-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+@media (max-width: 500px) {
+
+.hair-concern-grid {
+    grid-template-columns: 1fr;
+}
+
+}
+.why-beautykart {
+padding: 70px 5%;
+background-color: #ffffff;
+}
+
+.why-beautykart-heading {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.why-beautykart-heading h2 {
+font-size: 36px;
+margin-bottom: 10px;
+}
+
+.why-beautykart-heading p {
+font-size: 17px;
+color: #666;
+}
+
+.why-beautykart-container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 25px;
+}
+
+.why-card {
+text-align: center;
+padding: 30px 20px;
+background-color: #fafafa;
+border-radius: 15px;
+transition: 0.3s ease;
+}
+
+.why-card:hover {
+transform: translateY(-5px);
+}
+
+.why-card i {
+font-size: 38px;
+margin-bottom: 18px;
+}
+
+.why-card h3 {
+margin-bottom: 10px;
+font-size: 20px;
+}
+
+.why-card p {
+color: #666;
+font-size: 15px;
+line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+
+
+.why-beautykart-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+}
+
+@media (max-width: 500px) {
+
+
+.why-beautykart-container {
+    grid-template-columns: 1fr;
+}
+}
+
+.hair-footer {
+background-color: #1f1f1f;
+color: white;
+padding: 50px 5% 20px;
+}
+
+.hair-footer-container {
+display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+gap: 50px;
+}
+
+.hair-footer-container h2,
+.hair-footer-container h3 {
+margin-bottom: 15px;
+}
+
+.hair-footer-container p {
+color: #cccccc;
+line-height: 1.6;
+}
+
+.hair-footer-container a {
+display: block;
+color: #cccccc;
+text-decoration: none;
+margin-bottom: 10px;
+}
+
+.hair-footer-container a:hover {
+color: white;
+text-decoration: underline;
+}
+
+.hair-footer-bottom {
+margin-top: 40px;
+padding-top: 20px;
+border-top: 1px solid #444;
+text-align: center;
+}
+
+.hair-footer-bottom p {
+color: #aaa;
+font-size: 14px;
+}
+
+@media (max-width: 700px) {
+
+
+.hair-footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+
+}
+
+
+.fragrance-intro {
+margin: 30px 5%;
+min-height: 400px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+text-align: center;
+
+background-color: #f3eeee;
+border-radius: 15px;
+
+
+}
+
+.fragrance-intro-text {
+max-width: 700px;
+}
+
+.fragrance-intro h1 {
+font-size: 45px;
+margin-bottom: 15px;
+}
+
+.fragrance-intro p {
+font-size: 18px;
+color: #555;
+}
+
+.fragrance-intro button {
+margin-top: 25px;
+padding: 12px 25px;
+border: none;
+border-radius: 8px;
+
+background-color: #1D232C;
+color: white;
+
+cursor: pointer;
+
+}
+.fragrance-hero {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    background-color: #f8f4f5;
+    box-sizing: border-box;
+}
+
+.fragrance-hero-content {
+    width: 45%;
+}
+
+.fragrance-small-title {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #e90074;
+    margin-bottom: 20px;
+}
+
+.fragrance-hero-content h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.fragrance-hero-content > p:not(.fragrance-small-title) {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.fragrance-shop-btn {
+    border: none;
+    background-color: #e90074;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.fragrance-shop-btn:hover {
+    background-color: #c90063;
+}
+
+
+/* IMAGE */
+
+.fragrance-hero-image {
+    width: 45%;
+    height: 520px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fragrance-hero-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.fragrance-categories {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 17px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.fragrance-category-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.fragrance-category {
+    flex: 1;
+    padding: 40px 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.fragrance-category i {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.fragrance-category h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.fragrance-category p {
+    color: #666;
+    line-height: 1.5;
+}
+
+
+.fragrance-products {
+    padding: 60px 5%;
+    background-color: #fafafa;
+}
+
+.fragrance-product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+
+.fragrance-product {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.fragrance-product img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    background-color: #fff;
+}
+
+.fragrance-product h3 {
+    margin-top: 15px;
+    font-size: 19px;
+}
+
+.fragrance-product p {
+    color: #666;
+    font-size: 14px;
+    min-height: 40px;
+}
+
+.fragrance-product h4 {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.fragrance-product button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ec008c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: auto;
+    border-radius: 5px;
+}
+
+.fragrance-product button:hover {
+    background-color: #d6007d;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .fragrance-product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .fragrance-products {
+        padding: 40px 20px;
+    }
+
+    .fragrance-product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .fragrance-product img {
+        height: 250px;
+    }
+
 }
