@@ -793,6 +793,7 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 .hair-benefits{
     display:flex;
     justify-content: space-between;
@@ -987,30 +988,6 @@ background-color: #c90062;
 }
 
 
-@media (max-width: 1000px) {
-
-.hair-product-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-}
-
-@media (max-width: 600px) {
-
-.hair-products {
-    padding: 50px 20px;
-}
-
-.hair-products-heading h2 {
-    font-size: 30px;
-}
-
-.hair-product-grid {
-    grid-template-columns: 1fr;
-}
-}
-
-
 .hair-concerns {
 padding: 80px 5%;
 background-color: #fafafa;
@@ -1083,31 +1060,6 @@ text-decoration: none;
 text-decoration: underline;
 }
 
-
-
-@media (max-width: 1100px) {
-
-.hair-concern-grid {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-}
-
-@media (max-width: 700px) {
-
-.hair-concern-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-}
-
-@media (max-width: 500px) {
-
-.hair-concern-grid {
-    grid-template-columns: 1fr;
-}
-
-}
 .why-beautykart {
 padding: 70px 5%;
 background-color: #ffffff;
@@ -1162,24 +1114,6 @@ font-size: 15px;
 line-height: 1.6;
 }
 
-@media (max-width: 800px) {
-
-
-.why-beautykart-container {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-
-}
-
-@media (max-width: 500px) {
-
-
-.why-beautykart-container {
-    grid-template-columns: 1fr;
-}
-}
-
 .hair-footer {
 background-color: #1f1f1f;
 color: white;
@@ -1226,16 +1160,6 @@ color: #aaa;
 font-size: 14px;
 }
 
-@media (max-width: 700px) {
-
-
-.hair-footer-container {
-    grid-template-columns: 1fr;
-    gap: 30px;
-}
-
-
-}
 
 
 .fragrance-intro {
@@ -1459,23 +1383,422 @@ cursor: pointer;
 }
 
 
-/* Tablet */
+@media (max-width: 768px) {
 
-@media (max-width: 900px) {
+    .hair-benefits {
+        flex-direction: column;
+        gap: 15px;
+        padding: 30px 20px;
+    }
+
+    .hair-benefit {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 18px 20px;
+        gap: 15px;
+    }
+
+    .hair-benefit i {
+        font-size: 28px;
+        flex-shrink: 0;
+    }
+
+    .hair-benefit h3 {
+        font-size: 18px;
+    }
+
+    .hair-benefit p {
+        font-size: 13px;
+    }
+
+    .hair-intro {
+        padding: 45px 20px;
+    }
+
+    .hair-intro h1 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .hair-intro p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .hair-categories {
+        padding: 45px 20px 55px;
+    }
+
+    .section-heading {
+        margin-bottom: 25px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .section-heading p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .hair-category-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .hair-category-card {
+        min-height: 160px;
+        padding: 25px 15px;
+    }
+
+    .hair-category-card i {
+        font-size: 32px;
+        margin-bottom: 14px;
+    }
+
+    .hair-category-card h3 {
+        font-size: 17px;
+    }
+
+    .hair-category-card p {
+        font-size: 13px;
+    }
+
+    .hair-products {
+        padding: 50px 20px;
+    }
+
+    .hair-products-heading {
+        margin-bottom: 30px;
+    }
+
+    .hair-products-heading h2 {
+        font-size: 29px;
+    }
+
+    .hair-products-heading p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .hair-product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .hair-product-card {
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .hair-product-image {
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    .hair-product-image img {
+        width: 85%;
+        height: 85%;
+    }
+
+    .hair-product-card h3 {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .hair-product-brand {
+        font-size: 13px;
+    }
+
+    .hair-product-price {
+        font-size: 17px;
+    }
+
+    .hair-add-cart {
+        padding: 10px 5px;
+        font-size: 13px;
+    }
+
+
+    .hair-concerns {
+        padding: 50px 20px;
+    }
+
+    .hair-concerns-heading {
+        margin-bottom: 30px;
+    }
+
+    .hair-concerns-heading h2 {
+        font-size: 29px;
+    }
+
+    .hair-concerns-heading p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .hair-concern-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .hair-concern-card {
+        padding: 25px 15px;
+        border-radius: 12px;
+    }
+
+    .hair-concern-card i {
+        font-size: 34px;
+        margin-bottom: 15px;
+    }
+
+    .hair-concern-card h3 {
+        font-size: 17px;
+    }
+
+    .hair-concern-card p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .hair-concern-card a {
+        font-size: 14px;
+    }
+
+    .why-beautykart {
+        padding: 50px 20px;
+    }
+
+    .why-beautykart-heading {
+        margin-bottom: 30px;
+    }
+
+    .why-beautykart-heading h2 {
+        font-size: 28px;
+    }
+
+    .why-beautykart-heading p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .why-beautykart-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .why-card {
+        padding: 25px 15px;
+        border-radius: 12px;
+    }
+
+    .why-card i {
+        font-size: 32px;
+    }
+
+    .why-card h3 {
+        font-size: 17px;
+    }
+
+    .why-card p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .hair-footer {
+        padding: 40px 20px 20px;
+    }
+
+    .hair-footer-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .hair-footer-container h2 {
+        font-size: 24px;
+    }
+
+    .hair-footer-container h3 {
+        font-size: 17px;
+    }
+
+    .hair-footer-container p,
+    .hair-footer-container a {
+        font-size: 14px;
+    }
+
+    .fragrance-intro {
+        margin: 20px;
+        min-height: 300px;
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+
+    .fragrance-intro-text {
+        width: 100%;
+    }
+
+    .fragrance-intro h1 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .fragrance-intro p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .fragrance-intro button {
+        padding: 11px 22px;
+        font-size: 14px;
+    }
+
+    .fragrance-hero {
+        min-height: auto;
+        flex-direction: column;
+        padding: 45px 20px;
+        gap: 30px;
+    }
+
+    .fragrance-hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fragrance-small-title {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .fragrance-hero-content h1 {
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 18px;
+    }
+
+    .fragrance-hero-content > p:not(.fragrance-small-title) {
+        font-size: 15px;
+        line-height: 1.7;
+        margin: 0 auto 25px;
+    }
+
+    .fragrance-shop-btn {
+        padding: 13px 25px;
+        font-size: 14px;
+    }
+
+    .fragrance-hero-image {
+        width: 100%;
+        height: 350px;
+        border-radius: 10px;
+    }
+
+    .fragrance-categories {
+        padding: 45px 20px;
+    }
+
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+    .section-title p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .fragrance-category-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .fragrance-category {
+        padding: 30px 20px;
+    }
+
+    .fragrance-category i {
+        font-size: 34px;
+        margin-bottom: 15px;
+    }
+
+    .fragrance-category h3 {
+        font-size: 19px;
+    }
+
+    .fragrance-category p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .fragrance-products {
+        padding: 45px 20px;
+    }
 
     .fragrance-product-container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .fragrance-product {
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .fragrance-product img {
+        height: 200px;
+    }
+
+    .fragrance-product h3 {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-top: 12px;
+    }
+
+    .fragrance-product p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .fragrance-product h4 {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .fragrance-product button {
+        padding: 10px 5px;
+        font-size: 13px;
     }
 
 }
 
+@media (max-width: 500px) {
 
-/* Mobile */
+    .hair-category-container {
+        grid-template-columns: 1fr;
+    }
 
-@media (max-width: 600px) {
+    .hair-concern-grid {
+        grid-template-columns: 1fr;
+    }
 
-    .fragrance-products {
-        padding: 40px 20px;
+    .why-beautykart-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hair-product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hair-product-image {
+        height: 250px;
+    }
+    .fragrance-hero-content h1 {
+        font-size: 31px;
+    }
+
+    .fragrance-hero-image {
+        height: 300px;
     }
 
     .fragrance-product-container {

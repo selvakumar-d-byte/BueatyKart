@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
         href="https://fonts.googleapis.com/css2?family=Handlee&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <section class="offer" id="offer">
         <h4>Free Shipping on Orders Above ₹499</h4>
@@ -41,6 +43,10 @@
             </a>
             <a href="./haircare.html" class="active">
                 <p>HairCare</p>
+            </a>
+
+            <a href="./fragrance.html">
+                <p>Fragrance</p>
             </a>
 
             <a href="wishlist.html">
@@ -80,11 +86,15 @@
         <a href="./haircare.html" class="active">
             <p>Hair Care</p>
         </a>
+
+        <a href="./fragrance.html">
+            <p>Fragrance</p>
+        </a>
         <p class="offer-button" id="offer-button">Offer</p>
     </section>
 
     <div class="offer-overlay" id="offer-overlay">
-        
+
         <div class="offer-banner">
 
             <i class="fa-solid fa-xmark" id="offer-close"></i>
@@ -98,382 +108,383 @@
         </div>
 
     </div>
-  <section class="hair-benefits">
-    <div class="hair-benefit">
-        <i class="fa-solid fa-leaf"></i>
-         <div>
+    <section class="hair-benefits">
+        <div class="hair-benefit">
+            <i class="fa-solid fa-leaf"></i>
+            <div>
                 <h3>Quality Hair Care</h3>
                 <p>Products selected for your hair needs</p>
-    </div>
-    </div>
-    <div class="hair-benefit">
-         <i class="fa-solid fa-rotate-left"></i>
-         <div>
-            <h3>Easy Returns</h3>
-            <p>Simple hassle-free returns</p>
-         </div>
-    </div>
-    <div class="hair-benefit">
+            </div>
+        </div>
+        <div class="hair-benefit">
+            <i class="fa-solid fa-rotate-left"></i>
+            <div>
+                <h3>Easy Returns</h3>
+                <p>Simple hassle-free returns</p>
+            </div>
+        </div>
+        <div class="hair-benefit">
             <i class="fa-solid fa-truck"></i>
             <div>
                 <h3>Free Delivery</h3>
                 <p>On orders above ₹499</p>
             </div>
         </div>
-<div class="hair-benefit">
+        <div class="hair-benefit">
             <i class="fa-solid fa-shield-halved"></i>
             <div>
                 <h3>Secure Payments</h3>
                 <p>Safe and secure checkout</p>
             </div>
         </div>
-  </section>
-<section class="hair-intro">
-    <div class="hair-intro-content">
-           <p>
+    </section>
+    <section class="hair-intro">
+        <div class="hair-intro-content">
+            <p>
                 Discover carefully selected hair care products for your
                 everyday hair needs. From shampoos and conditioners to
                 serums, oils and hair masks, find the right products for
                 your hair care routine.
             </p>
-    </div>
-</section>
-<section class="hair-products">
+        </div>
+    </section>
+    <section class="hair-products">
 
-    <div class="hair-products-heading">
-        <h2>Popular Hair Care Products</h2>
-        <p>Discover products for healthier, stronger and beautiful hair</p>
-    </div>
+        <div class="hair-products-heading">
+            <h2>Popular Hair Care Products</h2>
+            <p>Discover products for healthier, stronger and beautiful hair</p>
+        </div>
 
-    <div class="hair-product-grid">
+        <div class="hair-product-grid">
 
-        <!-- PRODUCT 1 -->
-        <div class="hair-product-card">
+            <!-- PRODUCT 1 -->
+            <div class="hair-product-card" data-id="25">
 
-            <div class="hair-product-image">
-                <img src="../images/category-images/haircare.png" alt="Hair Shampoo">
+                <div class="hair-product-image">
+                    <img src="../images/category-images/haircare.png" alt="Hair Shampoo">
+                </div>
+
+                <h3>Nutri Hair Shampoo</h3>
+                <p class="hair-product-brand">Lashika</p>
+                <p class="hair-product-price">₹399</p>
+
+                <div class="hair-product-actions">
+                    <button class="hair-add-cart">Add to Bag</button>
+                </div>
+
             </div>
 
-            <h3>Nutri Hair Shampoo</h3>
-            <p class="hair-product-brand">Lashika</p>
-            <p class="hair-product-price">₹399</p>
 
-            <div class="hair-product-actions">
-                <button class="hair-add-cart">Add to Bag</button>
+            <!-- PRODUCT 2 -->
+            <div class="hair-product-card" data-id="26">
+
+                <div class="hair-product-image">
+                    <img src="../images/category-images/haircare-images/haircare-condi.png" alt="Hair Conditioner">
+                </div>
+
+                <h3>Nutri Hair Conditioner</h3>
+                <p class="hair-product-brand">Lashika</p>
+                <p class="hair-product-price">₹399</p>
+
+                <div class="hair-product-actions">
+                    <button class="hair-add-cart">Add to Bag</button>
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+            <div class="hair-product-card" data-id="27">
+
+                <div class="hair-product-image">
+                    <img src="../images/category-images/haircare-images/hairserum.png" alt="Hair Serum">
+                </div>
+
+                <h3>Hair Growth Serum</h3>
+                <p class="hair-product-brand">BeautyKare</p>
+                <p class="hair-product-price">₹599</p>
+
+                <div class="hair-product-actions">
+                    <button class="hair-add-cart">Add to Bag</button>
+                </div>
+
+            </div>
+
+
+            <div class="hair-product-card" data-id="28">
+
+                <div class="hair-product-image">
+                    <img src="../images/category-images/haircare-images/hairoil.png" alt="Hair Oil">
+                </div>
+
+                <h3>Nourishing Hair Oil</h3>
+                <p class="hair-product-brand">BeautyKare</p>
+                <p class="hair-product-price">₹299</p>
+
+                <div class="hair-product-actions">
+                    <button class="hair-add-cart">Add to Bag</button>
+                </div>
+
+            </div>
+
+
+
+            <div class="hair-product-card" data-id="29">
+
+                <div class="hair-product-image">
+                    <img src="../images/category-images/haircare-images/p5xcel.png" alt="Hair Shampoo">
+                </div>
+
+                <h3>Xcel Hair Shampoo</h3>
+                <p class="hair-product-brand">HairVeda</p>
+                <p class="hair-product-price">₹399</p>
+
+                <div class="hair-product-actions">
+                    <button class="hair-add-cart">Add to Bag</button>
+                </div>
+
+            </div>
+
+
+            <div class="hair-product-card" data-id="30">
+
+                <div class="hair-product-image">
+                    <img src="../images/category-images/haircare-images/haircare-condi.png" alt="Hair Conditioner">
+                </div>
+
+                <h3>SilkCare Hair Conditioner</h3>
+                <p class="hair-product-brand">GlowNest</p>
+                <p class="hair-product-price">₹399</p>
+
+                <div class="hair-product-actions">
+                    <button class="hair-add-cart">Add to Bag</button>
+                </div>
+
+            </div>
+
+
+            <div class="hair-product-card" data-id="31">
+
+                <div class="hair-product-image">
+                    <img src="../images/category-images/haircare-images/p7.png" alt="Hair Serum">
+                </div>
+
+                <h3>RootRevive Hair Serum</h3>
+                <p class="hair-product-brand">PureRoots</p>
+                <p class="hair-product-price">₹599</p>
+
+                <div class="hair-product-actions">
+                    <button class="hair-add-cart">Add to Bag</button>
+                </div>
+
+            </div>
+
+
+            <div class="hair-product-card" data-id="32">
+
+                <div class="hair-product-image">
+                    <img src="../images/category-images/haircare-images/p8.png" alt="Hair Oil">
+                </div>
+
+                <h3>HerbalGlow Hair Oil</h3>
+                <p class="hair-product-brand">NatureLuxe</p>
+                <p class="hair-product-price">₹899</p>
+
+                <div class="hair-product-actions">
+                    <button class="hair-add-cart">Add to Bag</button>
+                </div>
+
+            </div>
+
+            <div class="hair-product-card" data-id="33">
+
+                <div class="hair-product-image">
+                    <img src="../images/category-images/haircare-images/p9.png" alt="Hair Shampoo">
+                </div>
+
+                <h3>FreshRoot Shampoo</h3>
+                <p class="hair-product-brand">HairBloom</p>
+                <p class="hair-product-price">₹799</p>
+
+                <div class="hair-product-actions">
+                    <button class="hair-add-cart">Add to Bag</button>
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 10 -->
+            <div class="hair-product-card" data-id="34">
+
+                <div class="hair-product-image">
+                    <img src="../images/category-images/haircare-images/p10.png" alt="Hair Conditioner">
+                </div>
+
+                <h3>SmoothSilk Conditioner</h3>
+                <p class="hair-product-brand">CareVana</p>
+                <p class="hair-product-price">₹699</p>
+
+                <div class="hair-product-actions">
+                    <button class="hair-add-cart">Add to Bag</button>
+                </div>
+
+            </div>
+
+
+            <div class="hair-product-card" data-id="35">
+
+                <div class="hair-product-image">
+                    <img src="../images/category-images/haircare-images/p11.png" alt="Hair Serum">
+                </div>
+
+                <h3>HairRise Growth Serum</h3>
+                <p class="hair-product-brand">RootCare</p>
+                <p class="hair-product-price">₹999</p>
+
+                <div class="hair-product-actions">
+                    <button class="hair-add-cart">Add to Bag</button>
+                </div>
+
+            </div>
+
+
+            <div class="hair-product-card" data-id="36">
+
+                <div class="hair-product-image">
+                    <img src="../images/category-images/haircare-images/p12.png" alt="Hair Oil">
+                </div>
+
+                <h3>NourishPro Hair Oil</h3>
+                <p class="hair-product-brand">VitaGlow</p>
+                <p class="hair-product-price">₹599</p>
+
+                <div class="hair-product-actions">
+                    <button class="hair-add-cart">Add to Bag</button>
+                </div>
+
             </div>
 
         </div>
 
+    </section>
+    <section class="hair-concerns">
+        <div class="hair-concerns-heading">
+            <h2>Shop by Hair Concern</h2>
+            <p>Find the right care for your specific hair needs</p>
+        </div>
 
-        <!-- PRODUCT 2 -->
-        <div class="hair-product-card">
+        <div class="hair-concern-grid">
 
-            <div class="hair-product-image">
-                <img src="../images/category-images/haircare-images/haircare-condi.png" alt="Hair Conditioner">
+            <div class="hair-concern-card">
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Hair Fall</h3>
+                <p>Strengthen your hair and reduce breakage.</p>
+                <a href="#">Explore</a>
             </div>
 
-            <h3>Nutri Hair Conditioner</h3>
-            <p class="hair-product-brand">Lashika</p>
-            <p class="hair-product-price">₹399</p>
+            <div class="hair-concern-card">
+                <i class="fa-solid fa-droplet"></i>
+                <h3>Dandruff</h3>
+                <p>Keep your scalp fresh, clean and healthy.</p>
+                <a href="#">Explore</a>
+            </div>
 
-            <div class="hair-product-actions">
-                <button class="hair-add-cart">Add to Bag</button>
+            <div class="hair-concern-card">
+                <i class="fa-solid fa-wind"></i>
+                <h3>Dry Hair</h3>
+                <p>Restore moisture and softness to dry hair.</p>
+                <a href="#">Explore</a>
+            </div>
+
+            <div class="hair-concern-card">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h3>Frizzy Hair</h3>
+                <p>Smooth and manage unruly, frizzy hair.</p>
+                <a href="#">Explore</a>
+            </div>
+
+            <div class="hair-concern-card">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Damaged Hair</h3>
+                <p>Give damaged hair the care it needs.</p>
+                <a href="#">Explore</a>
             </div>
 
         </div>
 
+    </section>
 
-        <!-- PRODUCT 3 -->
-        <div class="hair-product-card">
+    <section class="why-beautykart">
 
-            <div class="hair-product-image">
-                <img src="../images/category-images/haircare-images/hairserum.png" alt="Hair Serum">
+        <div class="why-beautykart-heading">
+            <h2>Why Choose BeautyKart?</h2>
+            <p>Everything you need for a simple and reliable hair care routine.</p>
+        </div>
+
+        <div class="why-beautykart-container">
+
+            <div class="why-card">
+                <i class="fa-solid fa-circle-check"></i>
+                <h3>Quality Products</h3>
+                <p>Carefully selected products from trusted beauty brands.</p>
             </div>
 
-            <h3>Hair Growth Serum</h3>
-            <p class="hair-product-brand">BeautyKare</p>
-            <p class="hair-product-price">₹599</p>
+            <div class="why-card">
+                <i class="fa-solid fa-tags"></i>
+                <h3>Great Prices</h3>
+                <p>Find your favourite hair care products at affordable prices.</p>
+            </div>
 
-            <div class="hair-product-actions">
-                <button class="hair-add-cart">Add to Bag</button>
+            <div class="why-card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Fast Delivery</h3>
+                <p>Get your beauty essentials delivered conveniently to your doorstep.</p>
+            </div>
+
+            <div class="why-card">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Customer Support</h3>
+                <p>We are here to help you choose the right products for your needs.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="hair-footer">
+
+        <div class="hair-footer-container">
+
+            <div>
+                <h2>BEAUTYKART</h2>
+                <p>Your destination for beauty and hair care essentials.</p>
+            </div>
+
+            <div>
+                <h3>Categories</h3>
+                <a href="./haircare.html">Hair Care</a>
+                <a href="./makeup.html">MakeUp</a>
+                <a href="./skincare.html">Skin Care</a>
+                <a href="./fragrance.html"> fragrance</a>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="../index.html">Home</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="cart.html">Cart</a>
             </div>
 
         </div>
 
-
-        <div class="hair-product-card">
-
-            <div class="hair-product-image">
-                <img src="../images/category-images/haircare-images/hairoil.png" alt="Hair Oil">
-            </div>
-
-            <h3>Nourishing Hair Oil</h3>
-            <p class="hair-product-brand">BeautyKare</p>
-            <p class="hair-product-price">₹299</p>
-
-            <div class="hair-product-actions">
-                <button class="hair-add-cart">Add to Bag</button>
-            </div>
-
+        <div class="hair-footer-bottom">
+            <p>© 2026 BeautyKart. All Rights Reserved.</p>
         </div>
 
-
-    
-        <div class="hair-product-card">
-
-            <div class="hair-product-image">
-                <img src="../images/category-images/haircare-images/p5xcel.png" alt="Hair Shampoo">
-            </div>
-
-            <h3>Xcel Hair Shampoo</h3>
-            <p class="hair-product-brand">HairVeda</p>
-            <p class="hair-product-price">₹399</p>
-
-            <div class="hair-product-actions">
-                <button class="hair-add-cart">Add to Bag</button>
-            </div>
-
-        </div>
-
-
-        <div class="hair-product-card">
-
-            <div class="hair-product-image">
-                <img src="../images/category-images/haircare-images/haircare-condi.png" alt="Hair Conditioner">
-            </div>
-
-            <h3>SilkCare Hair Conditioner</h3>
-            <p class="hair-product-brand">GlowNest</p>
-            <p class="hair-product-price">₹399</p>
-
-            <div class="hair-product-actions">
-                <button class="hair-add-cart">Add to Bag</button>
-            </div>
-
-        </div>
-
-
-        <div class="hair-product-card">
-
-            <div class="hair-product-image">
-                <img src="../images/category-images/haircare-images/p7.png" alt="Hair Serum">
-            </div>
-
-            <h3>RootRevive Hair Serum</h3>
-            <p class="hair-product-brand">PureRoots</p>
-            <p class="hair-product-price">₹599</p>
-
-            <div class="hair-product-actions">
-                <button class="hair-add-cart">Add to Bag</button>
-            </div>
-
-        </div>
-
-
-        <div class="hair-product-card">
-
-            <div class="hair-product-image">
-                <img src="../images/category-images/haircare-images/p8.png" alt="Hair Oil">
-            </div>
-
-            <h3>HerbalGlow Hair Oil</h3>
-            <p class="hair-product-brand">NatureLuxe</p>
-            <p class="hair-product-price">₹899</p>
-
-            <div class="hair-product-actions">
-                <button class="hair-add-cart">Add to Bag</button>
-            </div>
-
-        </div>
-
-        <div class="hair-product-card">
-
-            <div class="hair-product-image">
-                <img src="../images/category-images/haircare-images/p9.png" alt="Hair Shampoo">
-            </div>
-
-            <h3>FreshRoot Shampoo</h3>
-            <p class="hair-product-brand">HairBloom</p>
-            <p class="hair-product-price">₹799</p>
-
-            <div class="hair-product-actions">
-                <button class="hair-add-cart">Add to Bag</button>
-            </div>
-
-        </div>
-
-
-        <!-- PRODUCT 10 -->
-        <div class="hair-product-card">
-
-            <div class="hair-product-image">
-                <img src="../images/category-images/haircare-images/p10.png" alt="Hair Conditioner">
-            </div>
-
-            <h3>SmoothSilk Conditioner</h3>
-            <p class="hair-product-brand">CareVana</p>
-            <p class="hair-product-price">₹699</p>
-
-            <div class="hair-product-actions">
-                <button class="hair-add-cart">Add to Bag</button>
-            </div>
-
-        </div>
-
-
-        <div class="hair-product-card">
-
-            <div class="hair-product-image">
-                <img src="../images/category-images/haircare-images/p11.png" alt="Hair Serum">
-            </div>
-
-            <h3>HairRise Growth Serum</h3>
-            <p class="hair-product-brand">RootCare</p>
-            <p class="hair-product-price">₹999</p>
-
-            <div class="hair-product-actions">
-                <button class="hair-add-cart">Add to Bag</button>
-            </div>
-
-        </div>
-
-
-        <div class="hair-product-card">
-
-            <div class="hair-product-image">
-                <img src="../images/category-images/haircare-images/p12.png" alt="Hair Oil">
-            </div>
-
-            <h3>NourishPro Hair Oil</h3>
-            <p class="hair-product-brand">VitaGlow</p>
-            <p class="hair-product-price">₹599</p>
-
-            <div class="hair-product-actions">
-                <button class="hair-add-cart">Add to Bag</button>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<section class="hair-concerns">
-<div class="hair-concerns-heading">
-    <h2>Shop by Hair Concern</h2>
-    <p>Find the right care for your specific hair needs</p>
-</div>
-
-<div class="hair-concern-grid">
-
-    <div class="hair-concern-card">
-        <i class="fa-solid fa-leaf"></i>
-        <h3>Hair Fall</h3>
-        <p>Strengthen your hair and reduce breakage.</p>
-        <a href="#">Explore</a>
-    </div>
-
-    <div class="hair-concern-card">
-        <i class="fa-solid fa-droplet"></i>
-        <h3>Dandruff</h3>
-        <p>Keep your scalp fresh, clean and healthy.</p>
-        <a href="#">Explore</a>
-    </div>
-
-    <div class="hair-concern-card">
-        <i class="fa-solid fa-wind"></i>
-        <h3>Dry Hair</h3>
-        <p>Restore moisture and softness to dry hair.</p>
-        <a href="#">Explore</a>
-    </div>
-
-    <div class="hair-concern-card">
-        <i class="fa-solid fa-wand-magic-sparkles"></i>
-        <h3>Frizzy Hair</h3>
-        <p>Smooth and manage unruly, frizzy hair.</p>
-        <a href="#">Explore</a>
-    </div>
-
-    <div class="hair-concern-card">
-        <i class="fa-solid fa-heart"></i>
-        <h3>Damaged Hair</h3>
-        <p>Give damaged hair the care it needs.</p>
-        <a href="#">Explore</a>
-    </div>
-
-</div>
-
-</section>
-
-<section class="why-beautykart">
-
-<div class="why-beautykart-heading">
-    <h2>Why Choose BeautyKart?</h2>
-    <p>Everything you need for a simple and reliable hair care routine.</p>
-</div>
-
-<div class="why-beautykart-container">
-
-    <div class="why-card">
-        <i class="fa-solid fa-circle-check"></i>
-        <h3>Quality Products</h3>
-        <p>Carefully selected products from trusted beauty brands.</p>
-    </div>
-
-    <div class="why-card">
-        <i class="fa-solid fa-tags"></i>
-        <h3>Great Prices</h3>
-        <p>Find your favourite hair care products at affordable prices.</p>
-    </div>
-
-    <div class="why-card">
-        <i class="fa-solid fa-truck-fast"></i>
-        <h3>Fast Delivery</h3>
-        <p>Get your beauty essentials delivered conveniently to your doorstep.</p>
-    </div>
-
-    <div class="why-card">
-        <i class="fa-solid fa-headset"></i>
-        <h3>Customer Support</h3>
-        <p>We are here to help you choose the right products for your needs.</p>
-    </div>
-
-</div>
-</section>
-
-<footer class="hair-footer">
-
-<div class="hair-footer-container">
-
-    <div>
-        <h2>BEAUTYKART</h2>
-        <p>Your destination for beauty and hair care essentials.</p>
-    </div>
-
-    <div>
-        <h3>Categories</h3>
-        <a href="./haircare.html">Hair Care</a>
-        <a href="./makeup.html">MakeUp</a>
-        <a href="./skincare.html">Skin Care</a>
-        <a href="./fragrance.html"> fragrance</a>
-    </div>
-
-    <div>
-        <h3>Quick Links</h3>
-        <a href="../index.html">Home</a>
-        <a href="wishlist.html">Wishlist</a>
-        <a href="cart.html">Cart</a>
-    </div>
-
-</div>
-
-<div class="hair-footer-bottom">
-    <p>© 2026 BeautyKart. All Rights Reserved.</p>
-</div>
-
-</footer>
+    </footer>
 
 
     <script src="../script.js"></script>
     <script src="../products/haircare.js"></script>
 </body>
+
 </html>

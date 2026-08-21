@@ -503,6 +503,426 @@ const products = [
             "Smooth texture",
             "Suitable for everyday use"
         ]
+    },
+
+    {
+        id: 25,
+        brand: "Lashika",
+        name: "Nutri Hair Shampoo",
+        category: "Shampoo",
+        image: "../images/category-images/haircare.png",
+        price: 399,
+        oldPrice: 499,
+        discount: "20% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 124,
+        description:
+            "A nourishing shampoo designed to gently cleanse the hair and support a healthy-looking hair care routine.",
+        benefits: [
+            "Gently cleanses hair",
+            "Helps nourish the hair",
+            "Suitable for regular use",
+            "Leaves hair feeling fresh"
+        ]
+    },
+
+    {
+        id: 26,
+        brand: "Lashika",
+        name: "Nutri Hair Conditioner",
+        category: "Conditioner",
+        image: "../images/category-images/haircare-images/haircare-condi.png",
+        price: 399,
+        oldPrice: 499,
+        discount: "20% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 98,
+        description:
+            "A nourishing conditioner that helps make hair feel softer, smoother and easier to manage.",
+        benefits: [
+            "Helps soften hair",
+            "Makes hair easier to manage",
+            "Supports smooth-looking hair",
+            "Suitable for regular use"
+        ]
+    },
+
+    {
+        id: 27,
+        brand: "BeautyKare",
+        name: "Hair Growth Serum",
+        category: "Hair Serum",
+        image: "../images/category-images/haircare-images/hairserum.png",
+        price: 599,
+        oldPrice: 699,
+        discount: "14% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 156,
+        description:
+            "A lightweight hair serum designed to support a healthy-looking scalp and hair care routine.",
+        benefits: [
+            "Lightweight formula",
+            "Easy to apply",
+            "Helps nourish hair",
+            "Suitable for regular use"
+        ]
+    },
+
+    {
+        id: 28,
+        brand: "BeautyKare",
+        name: "Nourishing Hair Oil",
+        category: "Hair Oil",
+        image: "../images/category-images/haircare-images/hairoil.png",
+        price: 299,
+        oldPrice: 349,
+        discount: "14% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 187,
+        description:
+            "A nourishing hair oil designed to provide moisture and support a healthy-looking hair care routine.",
+        benefits: [
+            "Helps nourish hair",
+            "Provides moisture",
+            "Easy to massage into the scalp",
+            "Suitable for regular use"
+        ]
+    },
+
+    {
+        id: 29,
+        brand: "HairVeda",
+        name: "Xcel Hair Shampoo",
+        category: "Shampoo",
+        image: "../images/category-images/haircare-images/p5xcel.png",
+        price: 399,
+        oldPrice: 499,
+        discount: "20% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 112,
+        description:
+            "A cleansing shampoo designed to keep hair fresh and clean while supporting everyday hair care.",
+        benefits: [
+            "Cleanses hair gently",
+            "Helps remove impurities",
+            "Keeps hair feeling fresh",
+            "Suitable for everyday use"
+        ]
+    },
+
+    {
+        id: 30,
+        brand: "GlowNest",
+        name: "SilkCare Hair Conditioner",
+        category: "Conditioner",
+        image: "../images/category-images/haircare-images/haircare-condi.png",
+        price: 399,
+        oldPrice: 499,
+        discount: "20% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 105,
+        description:
+            "A smoothening conditioner designed to make hair feel soft, manageable and silky.",
+        benefits: [
+            "Helps soften hair",
+            "Supports smooth-looking hair",
+            "Makes hair easier to manage",
+            "Suitable for regular use"
+        ]
+    },
+
+    {
+        id: 31,
+        brand: "PureRoots",
+        name: "RootRevive Hair Serum",
+        category: "Hair Serum",
+        image: "../images/category-images/haircare-images/p7.png",
+        price: 599,
+        oldPrice: 699,
+        discount: "14% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 143,
+        description:
+            "A lightweight hair serum designed to complement your daily hair care routine and keep hair looking healthy.",
+        benefits: [
+            "Lightweight texture",
+            "Easy application",
+            "Helps smooth hair",
+            "Suitable for daily use"
+        ]
+    },
+
+    {
+        id: 32,
+        brand: "NatureLuxe",
+        name: "HerbalGlow Hair Oil",
+        category: "Hair Oil",
+        image: "../images/category-images/haircare-images/p8.png",
+        price: 899,
+        oldPrice: 999,
+        discount: "10% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 176,
+        description:
+            "A herbal-inspired hair oil designed to nourish hair and support a regular hair care routine.",
+        benefits: [
+            "Helps nourish hair",
+            "Provides moisture",
+            "Herbal-inspired formula",
+            "Suitable for regular use"
+        ]
+    },
+
+    {
+        id: 33,
+        brand: "HairBloom",
+        name: "FreshRoot Shampoo",
+        category: "Shampoo",
+        image: "../images/category-images/haircare-images/p9.png",
+        price: 799,
+        oldPrice: 899,
+        discount: "11% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 134,
+        description:
+            "A refreshing shampoo designed to cleanse the hair and leave it feeling fresh and comfortable.",
+        benefits: [
+            "Cleanses hair",
+            "Refreshing feel",
+            "Helps remove impurities",
+            "Suitable for regular use"
+        ]
+    },
+
+    {
+        id: 34,
+        brand: "CareVana",
+        name: "SmoothSilk Conditioner",
+        category: "Conditioner",
+        image: "../images/category-images/haircare-images/p10.png",
+        price: 699,
+        oldPrice: 799,
+        discount: "13% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 118,
+        description:
+            "A smoothening conditioner designed to help hair feel softer, smoother and easier to style.",
+        benefits: [
+            "Helps soften hair",
+            "Supports smooth-looking hair",
+            "Makes hair manageable",
+            "Suitable for regular use"
+        ]
+    },
+
+    {
+        id: 35,
+        brand: "RootCare",
+        name: "HairRise Growth Serum",
+        category: "Hair Serum",
+        image: "../images/category-images/haircare-images/p11.png",
+        price: 999,
+        oldPrice: 1199,
+        discount: "17% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 192,
+        description:
+            "A lightweight hair serum designed to support a healthy-looking hair care routine and improve hair manageability.",
+        benefits: [
+            "Lightweight formula",
+            "Easy to apply",
+        "Helps smooth hair",
+            "Suitable for regular use"
+        ]
+    },
+
+    {
+        id: 36,
+        brand: "VitaGlow",
+        name: "NourishPro Hair Oil",
+        category: "Hair Oil",
+        image: "../images/category-images/haircare-images/p12.png",
+        price: 599,
+        oldPrice: 699,
+        discount: "14% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 149,
+        description:
+            "A nourishing hair oil designed to provide moisture and support healthy-looking, manageable hair.",
+        benefits: [
+            "Helps nourish hair",
+            "Provides moisture",
+            "Supports soft-looking hair",
+            "Suitable for regular use"
+        ]
+    },
+
+    {
+        id: 37,
+        brand: "BeautyKart",
+        name: "Signature Eau De Parfum",
+        category: "Perfume",
+        image: "../images/category-images/haircare-images/eau.png",
+        price: 899,
+        oldPrice: 999,
+        discount: "10% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 186,
+        description:
+            "A long-lasting floral Eau De Parfum with an elegant fragrance designed for everyday wear and special occasions.",
+        benefits: [
+            "Long-lasting fragrance",
+            "Elegant floral scent",
+            "Suitable for everyday use",
+            "Perfect for special occasions"
+        ]
+    },
+
+    {
+        id: 38,
+        brand: "BeautyKart",
+        name: "Classic Bloom Perfume",
+        category: "Perfume",
+        image: "../images/category-images/haircare-images/bloom.png",
+        price: 749,
+        oldPrice: 899,
+        discount: "17% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 142,
+        description:
+            "A refreshing and elegant perfume with a pleasant floral aroma that keeps you feeling fresh throughout the day.",
+        benefits: [
+            "Elegant floral fragrance",
+            "Refreshing scent",
+            "Easy to wear",
+            "Suitable for daily use"
+        ]
+    },
+
+    {
+        id: 39,
+        brand: "BeautyKart",
+        name: "Fresh Aura Body Mist",
+        category: "Body Mist",
+        image: "../images/category-images/haircare-images/Fresh Aura Body Mist.png",
+        price: 599,
+        oldPrice: 699,
+        discount: "14% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 118,
+        description:
+            "A light and refreshing body mist that gives you a pleasant fragrance and a fresh feeling throughout the day.",
+        benefits: [
+            "Lightweight fragrance",
+            "Refreshing scent",
+            "Easy to carry",
+            "Perfect for everyday use"
+        ]
+    },
+
+    {
+        id: 40,
+        brand: "BeautyKart",
+        name: "Royal Oud Fragrance",
+        category: "Fragrance",
+        image: "../images/category-images/haircare-images/royal.png",
+        price: 1199,
+        oldPrice: 1399,
+        discount: "14% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 205,
+        description:
+            "A rich and sophisticated oud fragrance created for those who prefer a bold, elegant and luxurious aroma.",
+        benefits: [
+            "Rich oud fragrance",
+            "Sophisticated aroma",
+            "Long-lasting scent",
+            "Ideal for special occasions"
+        ]
+    },
+
+    {
+        id: 41,
+        brand: "BeautyKart",
+        name: "Midnight Jasmine Perfume",
+        category: "Perfume",
+        image: "../images/category-images/haircare-images/Midnight Jasmine Perfume.png",
+        price: 899,
+        oldPrice: 999,
+        discount: "10% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 167,
+        description:
+            "A captivating jasmine perfume with a beautiful floral aroma that creates an elegant and memorable fragrance experience.",
+        benefits: [
+            "Long-lasting floral fragrance",
+            "Beautiful jasmine aroma",
+            "Elegant and feminine scent",
+            "Suitable for evening wear"
+        ]
+    },
+
+    {
+        id: 42,
+        brand: "BeautyKart",
+        name: "Golden Amber Body Mist",
+        category: "Body Mist",
+        image: "../images/category-images/haircare-images/Golden Amber Body Mist.png",
+        price: 800,
+        oldPrice: 950,
+        discount: "16% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 96,
+        description:
+            "A warm and refreshing amber body mist with an elegant fragrance that is perfect for everyday use.",
+        benefits: [
+            "Warm amber fragrance",
+            "Refreshing scent",
+            "Lightweight formula",
+            "Perfect for daily use"
+        ]
+    },
+
+    {
+        id: 43,
+        brand: "BeautyKart",
+        name: "Mystic Musk Fragrance",
+        category: "Fragrance",
+        image: "../images/category-images/haircare-images/Mystic Musk Fragrance.png",
+        price: 499,
+        oldPrice: 599,
+        discount: "17% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 124,
+        description:
+            "A soft and refreshing musk fragrance that provides a pleasant aroma and can be worn comfortably throughout the day.",
+        benefits: [
+            "Soft musk fragrance",
+            "Refreshing aroma",
+            "Suitable for everyday use",
+            "Affordable fragrance option"
+        ]
+    },
+
+    {
+        id: 44,
+        brand: "BeautyKart",
+        name: "Velvet Rose Eau De Parfum",
+        category: "Perfume",
+        image: "../images/category-images/haircare-images/Velvet Rose Eau De Parfum.png",
+        price: 1200,
+        oldPrice: 1400,
+        discount: "14% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 189,
+        description:
+            "A rich and sophisticated rose Eau De Parfum with an elegant floral aroma designed to leave a memorable impression.",
+        benefits: [
+            "Rich rose fragrance",
+            "Sophisticated aroma",
+            "Long-lasting scent",
+            "Perfect for special occasions"
+        ]
     }
 ];
 

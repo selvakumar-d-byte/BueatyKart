@@ -149,3 +149,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    document.querySelectorAll(".fragrance-product").forEach(card => {
+
+        card.addEventListener("click", function (e) {
+            if (e.target.closest(".fragrance-add-bag")) {
+                return;
+            }
+
+            const id = this.dataset.id;
+
+            window.location.href =
+                `./product-details.html?id=${id}`;
+
+        });
+
+    });
+
+});

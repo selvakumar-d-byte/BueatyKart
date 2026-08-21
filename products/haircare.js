@@ -59,3 +59,22 @@ cartButtons.forEach(function (button) {
 
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+
+    document.querySelectorAll(".hair-product-card").forEach(card => {
+
+        card.addEventListener("click", function (e) {
+            if (e.target.closest(".hair-add-cart")) {
+                return;
+            }
+
+            const id = this.dataset.id;
+
+            window.location.href =
+                `./product-details.html?id=${id}`;
+
+        });
+
+    });
+
+});
