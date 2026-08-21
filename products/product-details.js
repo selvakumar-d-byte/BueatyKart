@@ -198,6 +198,7 @@ if (!product) {
             <a href="./skincare.html"> Back to Skincare</a>
         </div>
     `;
+    
 
 }
 
