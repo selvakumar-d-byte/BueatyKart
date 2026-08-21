@@ -511,3 +511,23 @@ document.addEventListener("DOMContentLoaded", function () {
     filterProducts();
 
 });
+
+document.querySelectorAll(".product-card").forEach(card => {
+
+    card.addEventListener("click", function (e) {
+
+        if (
+            e.target.closest(".add-cart") ||
+            e.target.closest(".wishlist-btn")
+        ) {
+            return;
+        }
+
+        const id = this.dataset.id;
+
+        window.location.href =
+            `product-details.html?id=${id}`;
+
+    });
+
+});

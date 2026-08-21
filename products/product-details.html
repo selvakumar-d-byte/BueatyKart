@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details - BeautyKart</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./product-details.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>BEAUTYKART</h1>
+        </div>
+
+        <div class="header-icons">
+            <a href="./wishlist.html"><i class="fa-regular fa-heart"></i></a>
+
+            <a href="./cart.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cartCount">0</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+        <a href="./skincare.html">Skincare</a>
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+        <span id="breadcrumbProduct">Product</span>
+    </div>
+
+    <main class="product-details">
+        <div class="product-image-section">
+
+            <div class="discount" id="productDiscount"> 20% OFF </div>
+
+            <button class="wishlist-btn" id="wishlistButton">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+            <img id="productImage" src="" alt="Product">
+
+        </div>
+
+        <div class="product-info">
+
+            <p class="product-brand" id="productBrand"> BRAND </p>
+
+            <h1 id="productName"> Product Name </h1>
+
+            <div class="rating">
+                <p id="productRating"> ⭐⭐⭐⭐ </p>
+                <p> (
+                <p id="productReviews"> 0 </p> Reviews ) </p>
+            </div>
+
+            <div class="price">
+                <strong id="productPrice"> ₹0 </strong>
+                <del id="productOldPrice"> ₹0 </del>
+
+                <span id="productDiscountText">
+                    20% OFF
+                </span>
+            </div>
+
+            <div class="description">
+                <h3> Product Description </h3>
+                <p id="productDescription"> Product description will appear here. </p>
+            </div>
+
+            <div class="product-category">
+                <strong> Category: </strong>
+                <span id="productCategory"> Skincare </span>
+            </div>
+
+            <div class="quantity-section">
+
+                <h3> Quantity </h3>
+
+                <div class="quantity">
+                    <button id="decreaseBtn"> - </button>
+                    <span id="quantity"> 1 </span>
+                    <button id="increaseBtn"> + </button>
+                </div>
+
+            </div>
+
+            <div class="action-buttons">
+
+                <button class="add-cart" id="addToCart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    ADD TO BAG
+                </button>
+
+                <button class="buy-now" id="buyNow">
+                    BUY NOW
+                </button>
+
+            </div>
+
+            <div class="delivery-info">
+                <div>
+                    <i class="fa-solid fa-truck"></i>
+                    <div>
+                        <strong> Free Delivery </strong>
+                        <p> On orders above ₹499 </p>
+                    </div>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <div>
+                        <strong> Easy Returns </strong>
+                        <p> Easy return within 7 days </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="product-extra">
+        <div class="extra-box">
+            <h2> Product Details </h2>
+            <p id="fullDescription"> Product Details </p>
+        </div>
+
+        <div class="extra-box">
+            <h2> Why You'll Love It </h2>
+            <ul id="benefitsList"></ul>
+        </div>
+    </section>
+
+
+    <script src="./product-details.js"></script>
+
+</body>
+
+</html>
