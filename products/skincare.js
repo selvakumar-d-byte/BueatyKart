@@ -504,7 +504,7 @@ cartButton.addEventListener("click", function () {
 });
 
 
-// ================= PAGE LOAD =================
+//  PAGE LOAD 
 
 document.addEventListener("DOMContentLoaded", function () {
 

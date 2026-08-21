@@ -167,6 +167,342 @@ const products = [
             "Helps keep skin soft",
             "Suitable for daily skincare routine"
         ]
+    },
+
+    {
+        id: 9,
+        brand: "MAYBELLINE",
+        name: "Maybelline Creamy Matte Lipstick",
+        category: "Lipstick",
+        image: "../images/makeup/lipstick1.jpg.jpg",
+        price: 499,
+        oldPrice: 599,
+        discount: "17% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 247,
+        description:
+            "A creamy matte lipstick that gives rich color with a smooth and comfortable finish.",
+        benefits: [
+            "Smooth matte finish",
+            "Rich color payoff",
+            "Comfortable to wear",
+            "Suitable for everyday makeup"
+        ]
+    },
+
+    {
+        id: 10,
+        brand: "LAKME",
+        name: "Lakme Liquid Matte Lipstick",
+        category: "Lipstick",
+        image: "../images/makeup/lipstick2.jpg.jpg",
+        price: 300,
+        oldPrice: 399,
+        discount: "25% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 185,
+        description:
+            "A liquid matte lipstick that provides intense color and a smooth matte finish.",
+        benefits: [
+            "Liquid matte finish",
+            "Intense color",
+            "Lightweight feel",
+            "Easy to apply"
+        ]
+    },
+
+    {
+        id: 11,
+        brand: "SWISS BEAUTY",
+        name: "Swiss Beauty Non-Transfer Lipstick",
+        category: "Lipstick",
+        image: "../images/makeup/lipsstick3.jpg.jpg",
+        price: 599,
+        oldPrice: 699,
+        discount: "14% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 156,
+        description:
+            "A non-transfer lipstick designed to provide long-lasting color with a comfortable finish.",
+        benefits: [
+            "Non-transfer formula",
+            "Long-lasting color",
+            "Comfortable finish",
+            "Easy application"
+        ]
+    },
+
+    {
+        id: 12,
+        brand: "MAC",
+        name: "MAC Matte Retro Lipstick",
+        category: "Lipstick",
+        image: "../images/makeup/lipsstick4.jpg.jpg",
+        price: 699,
+        oldPrice: 899,
+        discount: "22% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 321,
+        description:
+            "A classic matte lipstick that delivers bold color with a smooth and elegant finish.",
+        benefits: [
+            "Bold color",
+            "Matte finish",
+            "Smooth application",
+            "Suitable for special occasions"
+        ]
+    },
+
+    {
+        id: 13,
+        brand: "LAKME",
+        name: "Lakme 9to5 Primer + Matte Foundation",
+        category: "Foundation",
+        image: "../images/makeup/fnd1.jpg.jpg",
+        price: 1011,
+        oldPrice: 1200,
+        discount: "16% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 214,
+        description:
+            "A primer and foundation combination that provides a smooth matte base for your makeup.",
+        benefits: [
+            "Primer and foundation in one",
+            "Smooth matte finish",
+            "Helps create an even base",
+            "Suitable for everyday makeup"
+        ]
+    },
+
+    {
+        id: 14,
+        brand: "MAYBELLINE",
+        name: "Maybelline Fit Me Liquid Foundation",
+        category: "Foundation",
+        image: "../images/makeup/fnd2.jpg.jpg",
+        price: 799,
+        oldPrice: 999,
+        discount: "20% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 438,
+        description:
+            "A lightweight liquid foundation that provides an even-looking and natural makeup base.",
+        benefits: [
+            "Lightweight formula",
+            "Natural-looking finish",
+            "Easy to blend",
+            "Suitable for everyday use"
+        ]
+    },
+
+    {
+        id: 15,
+        brand: "LOREAL PARIS",
+        name: "Loreal Paris Infallible Foundation",
+        category: "Foundation",
+        image: "../images/makeup/fnd3.jpg.jpg",
+        price: 899,
+        oldPrice: 1099,
+        discount: "18% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 267,
+        description:
+            "A long-lasting foundation designed to provide an even and comfortable makeup finish.",
+        benefits: [
+            "Long-lasting wear",
+            "Even-looking finish",
+            "Comfortable texture",
+            "Easy to blend"
+        ]
+    },
+
+    {
+        id: 16,
+        brand: "SWISS BEAUTY",
+        name: "Swiss Beauty HD Foundation",
+        category: "Foundation",
+        image: "../images/makeup/fnd4.jpg.jpg",
+        price: 899,
+        oldPrice: 1099,
+        discount: "18% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 198,
+        description:
+            "An HD foundation designed to create a smooth and even makeup base.",
+        benefits: [
+            "HD finish",
+            "Smooth texture",
+            "Easy to blend",
+            "Suitable for different makeup looks"
+        ]
+    },
+
+    {
+        id: 17,
+        brand: "MAYBELLINE",
+        name: "Maybelline Lash Sensational Mascara",
+        category: "Mascara",
+        image: "../images/makeup/ms1.jpg.jpg",
+        price: 705,
+        oldPrice: 849,
+        discount: "17% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 356,
+        description:
+            "A mascara designed to enhance lashes and provide a fuller and more defined eye look.",
+        benefits: [
+            "Enhances lashes",
+            "Helps create fuller-looking lashes",
+            "Easy application",
+            "Suitable for everyday makeup"
+        ]
+    },
+
+    {
+        id: 18,
+        brand: "BLUE HEAVEN",
+        name: "Blue Heaven Walk-Free Mascara",
+        category: "Mascara",
+        image: "../images/makeup/ms2.jpg.jpg",
+        price: 539,
+        oldPrice: 649,
+        discount: "17% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 142,
+        description:
+            "A mascara that helps define and enhance the appearance of your eyelashes.",
+        benefits: [
+            "Defines lashes",
+            "Easy to apply",
+            "Lightweight feel",
+            "Suitable for daily use"
+        ]
+    },
+
+    {
+        id: 19,
+        brand: "LAKME",
+        name: "Lakme Eyeconic Curling Mascara",
+        category: "Mascara",
+        image: "../images/makeup/ms3.jpg.jpg",
+        price: 699,
+        oldPrice: 799,
+        discount: "13% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 231,
+        description:
+            "A curling mascara designed to give lashes a defined and lifted appearance.",
+        benefits: [
+            "Curling effect",
+            "Defines lashes",
+            "Easy application",
+            "Suitable for everyday use"
+        ]
+    },
+
+    {
+        id: 20,
+        brand: "MAC",
+        name: "MAC Extended Play Gigablack Mascara",
+        category: "Mascara",
+        image: "../images/makeup/ms4.jpg.jpg",
+        price: 490,
+        oldPrice: 599,
+        discount: "18% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 184,
+        description:
+            "A black mascara designed to define lashes and create a bold eye look.",
+        benefits: [
+            "Deep black color",
+            "Defines lashes",
+            "Lightweight formula",
+            "Creates a bold eye look"
+        ]
+    },
+
+    {
+        id: 21,
+        brand: "SWISS BEAUTY",
+        name: "Swiss Beauty Liquid Eyeliner",
+        category: "Eyeliner",
+        image: "../images/makeup/EYE1.jpg.jpg",
+        price: 599,
+        oldPrice: 699,
+        discount: "14% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 167,
+        description:
+            "A liquid eyeliner designed to create precise and defined eye looks.",
+        benefits: [
+            "Precise application",
+            "Rich color",
+            "Easy to use",
+            "Suitable for different eye looks"
+        ]
+    },
+
+    {
+        id: 22,
+        brand: "LAKME",
+        name: "Lakme Eyeconic Liquid Eyeliner",
+        category: "Eyeliner",
+        image: "../images/makeup/eye2.jpg.jpg",
+        price: 350,
+        oldPrice: 450,
+        discount: "22% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 294,
+        description:
+            "A liquid eyeliner that helps create smooth and defined lines for an attractive eye look.",
+        benefits: [
+            "Smooth application",
+            "Precise lines",
+            "Easy to use",
+            "Suitable for everyday makeup"
+        ]
+    },
+
+    {
+        id: 23,
+        brand: "MAYBELLINE",
+        name: "Maybelline Colossal Bold Eyeliner",
+        category: "Eyeliner",
+        image: "../images/makeup/eye3.jpg.jpg",
+        price: 450,
+        oldPrice: 550,
+        discount: "18% OFF",
+        rating: "⭐⭐⭐⭐⭐",
+        reviews: 318,
+        description:
+            "A bold eyeliner designed to create defined and dramatic eye looks.",
+        benefits: [
+            "Bold color",
+            "Precise application",
+            "Easy to use",
+            "Great for dramatic eye looks"
+        ]
+    },
+
+    {
+        id: 24,
+        brand: "PLUM",
+        name: "Plum Naturals Kajal & Eyeliner",
+        category: "Eyeliner",
+        image: "../images/makeup/eye4.jpg.jpg",
+        price: 250,
+        oldPrice: 299,
+        discount: "16% OFF",
+        rating: "⭐⭐⭐⭐",
+        reviews: 129,
+        description:
+            "A kajal and eyeliner combination designed to create simple and defined eye looks.",
+        benefits: [
+            "Kajal and eyeliner combination",
+            "Easy application",
+            "Smooth texture",
+            "Suitable for everyday use"
+        ]
     }
 ];
 
@@ -198,7 +534,6 @@ if (!product) {
             <a href="./skincare.html"> Back to Skincare</a>
         </div>
     `;
-    
 
 }
 
@@ -264,7 +599,7 @@ else {
 
         if (quantity > 1) {
             quantity--;
-    
+
             quantityDisplay.textContent =
                 quantity;
         }
@@ -281,8 +616,8 @@ else {
         if (wishlistButton.classList.contains("active")) {
             icon.classList.remove("fa-regular");
             icon.classList.add("fa-solid");
-        } 
-        
+        }
+
         else {
             icon.classList.remove("fa-solid");
             icon.classList.add("fa-regular");
@@ -293,40 +628,40 @@ else {
     // Cart
     document.getElementById("addToCart").addEventListener("click", () => {
 
-            const cartItem = {
-                id: product.id,
-                name: product.name,
-                brand: product.brand,
-                price: product.price,
-                image: product.image,
-                quantity: quantity
-            };
+        const cartItem = {
+            id: product.id,
+            name: product.name,
+            brand: product.brand,
+            price: product.price,
+            image: product.image,
+            quantity: quantity
+        };
 
-            // Get existing cart
-            let cart =JSON.parse( localStorage.getItem("cart")) || [];
+        // Get existing cart
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-            // Check if product already exists
-            const existingProduct = cart.find( item => item.id === product.id );
+        // Check if product already exists
+        const existingProduct = cart.find(item => item.id === product.id);
 
-            if (existingProduct) {
-                existingProduct.quantity += quantity;
-            } 
-            else {
-                cart.push(cartItem);
-            }
+        if (existingProduct) {
+            existingProduct.quantity += quantity;
+        }
+        else {
+            cart.push(cartItem);
+        }
 
-            // Save cart
-            localStorage.setItem(
-                "cart",
-                JSON.stringify(cart)
-            );
+        // Save cart
+        localStorage.setItem(
+            "cart",
+            JSON.stringify(cart)
+        );
 
-            updateCartCount();
+        updateCartCount();
 
-            alert(
-                `${product.name} added to bag!`
-            );
-        });
+        alert(
+            `${product.name} added to bag!`
+        );
+    });
 
 
     // Buy Now
@@ -343,13 +678,13 @@ else {
                 quantity: quantity
             };
 
-            let cart =JSON.parse( localStorage.getItem("cart") ) || [];
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-            const existingProduct = cart.find( item => item.id === product.id );
+            const existingProduct = cart.find(item => item.id === product.id);
 
             if (existingProduct) {
                 existingProduct.quantity += quantity;
-            } 
+            }
             else {
                 cart.push(cartItem);
             }
@@ -367,7 +702,7 @@ else {
 
     // Cart Count
     function updateCartCount() {
-        const cart = JSON.parse( localStorage.getItem("cart") ) || [];
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
         const totalQuantity =
             cart.reduce(
                 (total, item) =>
