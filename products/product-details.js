@@ -1025,24 +1025,63 @@ else {
         }
     });
 
+  
     // Wishlist
-    const wishlistButton = document.getElementById("wishlistButton");
+const wishlistButton = document.getElementById("wishlistButton");
+const wishlistIcon = wishlistButton.querySelector("i");
 
-    wishlistButton.addEventListener("click", () => {
-        wishlistButton.classList.toggle("active");
+let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 
-        const icon = wishlistButton.querySelector("i");
+const isWishlisted = wishlist.some(item => item.id === product.id);
 
-        if (wishlistButton.classList.contains("active")) {
-            icon.classList.remove("fa-regular");
-            icon.classList.add("fa-solid");
-        }
+if (isWishlisted) {
+    wishlistButton.classList.add("active");
+    wishlistIcon.classList.remove("fa-regular");
+    wishlistIcon.classList.add("fa-solid");
+}
 
-        else {
-            icon.classList.remove("fa-solid");
-            icon.classList.add("fa-regular");
-        }
-    });
+wishlistButton.addEventListener("click", () => {
+
+    let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+    const existingProduct = wishlist.find(
+        item => item.id === product.id
+    );
+
+    if (existingProduct) {
+
+        wishlist = wishlist.filter(
+            item => item.id !== product.id
+        );
+
+        wishlistButton.classList.remove("active");
+        wishlistIcon.classList.remove("fa-solid");
+        wishlistIcon.classList.add("fa-regular");
+
+    } else {
+
+        const wishlistItem = {
+            id: product.id,
+            name: product.name,
+            brand: product.brand,
+            price: product.price,
+            oldPrice: product.oldPrice,
+            image: product.image,
+            discount: product.discount
+        };
+
+        wishlist.push(wishlistItem);
+
+        wishlistButton.classList.add("active");
+        wishlistIcon.classList.remove("fa-regular");
+        wishlistIcon.classList.add("fa-solid");
+    }
+
+    localStorage.setItem(
+        "wishlist",
+        JSON.stringify(wishlist)
+    );
+});
 
 
     // Cart
