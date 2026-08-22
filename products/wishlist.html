@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wishlist - BeautyKart</title>
+
+    <link rel="stylesheet" href="./wishlist.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <h1>BEAUTYKART</h1>
+        </div>
+
+        <div class="header-icons">
+
+            <a href="./wishlist.html">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+
+            <a href="./cart.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cartCount">0</span>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main class="wishlist-page">
+
+        <div class="wishlist-header">
+            <h1>My Wishlist</h1>
+            <p>Your favourite products</p>
+        </div>
+
+
+        <div id="wishlistContainer" class="wishlist-container"></div>
+
+
+        <div id="emptyWishlist" class="empty-wishlist">
+
+            <i class="fa-regular fa-heart"></i>
+
+            <h2>Your Wishlist is Empty</h2>
+
+            <p>
+                You haven't added any products to your wishlist yet.
+            </p>
+
+            <a href="./skincare.html">
+                Continue Shopping
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <script src="./wishlist.js"></script>
+
+</body>
+
+</html>
+
