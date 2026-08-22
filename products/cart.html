@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Cart - BeautyKart</title>
+
+<link rel="stylesheet" href="./cart.css">
+
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+<!-- Header -->
+
+<header class="header">
+
+    <div class="logo">
+        <h1>BEAUTYKART</h1>
+    </div>
+
+    <div class="header-icons">
+
+        <a href="./wishlist.html">
+            <i class="fa-regular fa-heart"></i>
+        </a>
+
+        <a href="./cart.html">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- Breadcrumb -->
+
+<div class="breadcrumb">
+
+    <a href="../index.html">Home</a>
+
+    <i class="fa-solid fa-chevron-right"></i>
+
+    <span>Cart</span>
+
+</div>
+
+
+<!-- Cart -->
+
+<main class="cart-container">
+
+    <h1>My Cart</h1>
+
+
+    <div class="cart-main">
+
+        <!-- Cart Products -->
+
+        <div class="cart-section">
+
+            <div class="cart-title">
+
+                <h2>Cart Items</h2>
+
+                <button onclick="clearCart()">
+                    Clear Cart
+                </button>
+
+            </div>
+
+
+            <div id="cart-items">
+
+                <!-- Cart products will appear here -->
+
+            </div>
+
+        </div>
+
+
+        <!-- Total -->
+
+        <div class="cart-total-box">
+
+            <h2>Cart Summary</h2>
+
+            <div class="total-row">
+
+                <span>Total</span>
+
+                <strong>
+                    ₹<span id="cart-total">0</span>
+                </strong>
+
+            </div>
+
+
+            <button class="checkout-btn">
+                Checkout
+            </button>
+
+
+            <a href="./skincare.html">
+                Continue Shopping
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="./cart.js"></script>
+
+
+</body>
+
+</html>
