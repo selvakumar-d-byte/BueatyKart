@@ -457,35 +457,6 @@
     font-weight: 600;
 }
 
-.wishlist-btn {
-    position: absolute;
-
-    z-index: 3;
-
-    top: 10px;
-    right: 10px;
-
-    width: 36px;
-    height: 36px;
-
-    border: none;
-
-    border-radius: 50%;
-
-    background: white;
-
-    font-size: 17px;
-
-    transition: 0.3s;
-}
-
-.wishlist-btn:hover,
-.wishlist-btn.active {
-    color: white;
-
-    background: #ff3f6c;
-}
-
 .product-info {
     padding: 18px;
 }

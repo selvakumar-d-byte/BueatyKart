@@ -413,27 +413,6 @@ clearFilters.addEventListener("click", function () {
 });
 
 
-// ================= WISHLIST =================
-
-const wishlistButtons =
-    document.querySelectorAll(".wishlist-btn");
-
-wishlistButtons.forEach(function (button) {
-
-    button.addEventListener("click", function () {
-
-        button.classList.toggle("active");
-
-        const icon = button.querySelector("i");
-
-        icon.classList.toggle("fa-regular");
-        icon.classList.toggle("fa-solid");
-
-    });
-
-});
-
-
 // ================= VIEW DETAILS =================
 
 const viewDetailsButtons =

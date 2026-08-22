@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<title>Cart - BeautyKart</title>
+<title>Cart-BeautyKart</title>
 
+<link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="./cart.css">
 
 <link rel="stylesheet"
@@ -112,7 +113,7 @@
             </div>
 
 
-            <button class="checkout-btn">
+            <button class="checkout-btn" onclick="openCheckoutPopup()">
                 Checkout
             </button>
 
@@ -130,6 +131,27 @@
 
 <script src="./cart.js"></script>
 
+
+
+    <!-- Checkout Popup -->
+    <div id="checkout-popup" class="checkout-popup">
+        <div class="checkout-modal">
+            <button class="close-popup" onclick="closeCheckoutPopup()">&times;</button>
+
+            <h2>Checkout</h2>
+            <p>Enter your details to complete your order.</p>
+
+            <input type="text" id="customer-name" placeholder="Full Name">
+            <input type="text" id="customer-phone" placeholder="Phone Number">
+            <textarea id="customer-address" placeholder="Delivery Address"></textarea>
+
+            <button class="place-order-btn" onclick="placeOrder()">
+                Place Order
+            </button>
+        </div>
+    </div>
+
+    <script src="./cart.js"></script>
 
 </body>
 

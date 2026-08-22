@@ -32,41 +32,13 @@ if (searchInput) {
 
 }
 
-let cartButtons =
-    document.querySelectorAll(".hair-add-cart");
 
-
-cartButtons.forEach(function (button) {
-
-    button.addEventListener("click", function () {
-
- 
-        let productCard = button.closest(".hair-product-card");
-
-
-        button.textContent = "Added ✓";
-
-
-        productCard.style.opacity = "0.55";
-
-
-        productCard.style.transform = "scale(0.98)";
-
-
-        button.disabled = true;
-
-    });
-
-});
 
 document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelectorAll(".hair-product-card").forEach(card => {
 
         card.addEventListener("click", function (e) {
-            if (e.target.closest(".hair-add-cart")) {
-                return;
-            }
 
             const id = this.dataset.id;
 

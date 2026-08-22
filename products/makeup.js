@@ -3,7 +3,7 @@ let filterButtons = document.querySelectorAll("#category-filters button")
 let allCards = document.querySelectorAll(".makeup-card")
 let sortSelect = document.getElementById("sort-select")
 let productGrid = document.getElementById("product-grid")
-let addToCartButtons = document.querySelectorAll(".add-to-cart-btn")
+let addToCartButtons = document.querySelectorAll(".view-details")
 
 
 //CATEGORY BUTTONS CLICK EVENT (Lipstick, Foundion,eyeliner,mascara.)

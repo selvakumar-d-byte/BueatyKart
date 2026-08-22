@@ -928,6 +928,7 @@ border-radius: 15px;
 padding: 20px;
 background-color: #fff;
 transition: 0.3s ease;
+cursor: pointer;
 }
 
 .hair-product-card:hover {
@@ -970,7 +971,7 @@ font-weight: 600;
 margin-bottom: 15px;
 }
 
-.hair-add-cart {
+.view-details {
 width: 100%;
 padding: 12px;
 border: none;
@@ -983,7 +984,7 @@ cursor: pointer;
 transition: 0.3s ease;
 }
 
-.hair-add-cart:hover {
+.view-details:hover {
 background-color: #c90062;
 }
 
@@ -1340,6 +1341,7 @@ cursor: pointer;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .fragrance-product img {
@@ -1515,7 +1517,7 @@ cursor: pointer;
         font-size: 17px;
     }
 
-    .hair-add-cart {
+    .view-details {
         padding: 10px 5px;
         font-size: 13px;
     }
@@ -1743,6 +1745,7 @@ cursor: pointer;
     .fragrance-product {
         padding: 12px;
         border-radius: 10px;
+        cursor: pointer;
     }
 
     .fragrance-product img {
