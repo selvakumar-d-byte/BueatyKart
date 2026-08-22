@@ -366,38 +366,45 @@ const clearFilters =
 clearFilters.addEventListener("click", function () {
 
     // Clear category
+
     categoryFilters.forEach(function (filter) {
         filter.checked = false;
     });
 
 
     // Reset price
+
     document.querySelector(
         '.price-filter[value="all"]'
     ).checked = true;
 
 
     // Clear rating
+
     ratingFilters.forEach(function (filter) {
         filter.checked = false;
     });
 
 
     // Clear search
+
     searchInput.value = "";
 
 
     // Reset sorting
+
     sortSelect.value = "default";
 
 
     // Show all products
+
     productCards.forEach(function (card) {
         card.style.display = "";
     });
 
 
     // Reset count
+
     productCount.textContent =
         productCards.length + " Products";
 
@@ -427,107 +434,66 @@ wishlistButtons.forEach(function (button) {
 });
 
 
-// ================= ADD TO CART =================
+// ================= VIEW DETAILS =================
 
-const addCartButtons =
-    document.querySelectorAll(".add-cart");
+const viewDetailsButtons =
+    document.querySelectorAll(".view-details");
 
-const cartCount =
-    document.getElementById("cartCount");
+viewDetailsButtons.forEach(function (button) {
 
-let cartItems =
-    Number(localStorage.getItem("nykaaCartCount")) || 0;
+    button.addEventListener("click", function (event) {
 
+        // Prevent the product-card click event
+        event.stopPropagation();
 
-cartCount.textContent = cartItems;
+        // Find the product card
+        const card =
+            button.closest(".product-card");
 
+        // Get product ID
+        const id =
+            card.dataset.id;
 
-addCartButtons.forEach(function (button) {
-
-    button.addEventListener("click", function () {
-
-        cartItems++;
-
-
-        localStorage.setItem(
-            "nykaaCartCount",
-            cartItems
-        );
-
-
-        cartCount.textContent = cartItems;
-
-
-        button.textContent = "ADDED ✓";
-
-        button.style.background = "#2e7d32";
-        button.style.borderColor = "#2e7d32";
-
-
-        setTimeout(function () {
-
-            button.textContent = "ADD TO BAG";
-
-            button.style.background = "";
-            button.style.borderColor = "";
-
-        }, 1500);
-
-    });
-
-});
-
-
-// ================= CART BUTTON =================
-
-const cartButton =
-    document.getElementById("cartButton");
-
-cartButton.addEventListener("click", function () {
-
-    if (cartItems === 0) {
-
-        alert("Your shopping bag is empty.");
-
-    }
-
-    else {
-
-        alert(
-            "You have " +
-            cartItems +
-            " item(s) in your shopping bag."
-        );
-
-    }
-
-});
-
-
-//  PAGE LOAD 
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    filterProducts();
-
-});
-
-document.querySelectorAll(".product-card").forEach(card => {
-
-    card.addEventListener("click", function (e) {
-
-        if (
-            e.target.closest(".add-cart") ||
-            e.target.closest(".wishlist-btn")
-        ) {
-            return;
-        }
-
-        const id = this.dataset.id;
-
+        // Go to product details page
         window.location.href =
             `./product-details.html?id=${id}`;
 
     });
+
+});
+
+
+// ================= PRODUCT CARD CLICK =================
+
+document.querySelectorAll(".product-card").forEach(function (card) {
+
+    card.addEventListener("click", function (event) {
+
+        // Don't open details when wishlist is clicked
+        if (
+            event.target.closest(".view-details") ||
+            event.target.closest(".wishlist-btn")
+        ) {
+            return;
+        }
+
+        // Get product ID
+        const id =
+            card.dataset.id;
+
+        // Open product details page
+        window.location.href =
+            `./product-details.html?id=${id}`;
+
+    });
+
+});
+
+
+// ================= PAGE LOAD =================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    filterProducts();
 
 });
