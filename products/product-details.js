@@ -951,7 +951,7 @@ if (!product) {
             <p> The product you are looking for does not exist.</p>
             <br>
 
-            <a href="./skincare.html"> Back to Skincare</a>
+            <a href="../index.html"> Back to Home</a>
         </div>
     `;
 
@@ -1124,9 +1124,7 @@ wishlistButton.addEventListener("click", () => {
 
 
     // Buy Now
-    document
-        .getElementById("buyNow")
-        .addEventListener("click", () => {
+    document.getElementById("buyNow").addEventListener("click", () => {
 
             const cartItem = {
                 id: product.id,
@@ -1149,12 +1147,10 @@ wishlistButton.addEventListener("click", () => {
             }
 
             localStorage.setItem(
-                "cart",
-                JSON.stringify(cart)
+                "cart", JSON.stringify(cart)
             );
 
-            window.location.href =
-                "./cart.html";
+            window.location.href = "./cart.html";
         });
 
 
@@ -1169,12 +1165,10 @@ wishlistButton.addEventListener("click", () => {
                 0
             );
 
-        const cartCount =
-            document.getElementById("cartCount");
+        const cartCount = document.getElementById("cartCount");
 
         if (cartCount) {
-            cartCount.textContent =
-                totalQuantity;
+            cartCount.textContent = totalQuantity;
         }
     }
 
