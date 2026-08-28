@@ -1058,7 +1058,8 @@ wishlistButton.addEventListener("click", () => {
         wishlistIcon.classList.remove("fa-solid");
         wishlistIcon.classList.add("fa-regular");
 
-    } else {
+    } 
+    else {
 
         const wishlistItem = {
             id: product.id,
